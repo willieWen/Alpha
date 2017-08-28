@@ -16,6 +16,7 @@
 		3D9DFBE91F39300C006A4304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DFBE71F39300C006A4304 /* LaunchScreen.storyboard */; };
 		3D9DFBF41F39300C006A4304 /* alphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DFBF31F39300C006A4304 /* alphaTests.swift */; };
 		3D9DFBFF1F39300D006A4304 /* alphaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DFBFE1F39300D006A4304 /* alphaUITests.swift */; };
+		3DE62F4F1F52F0E7005FC8D5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE62F4E1F52F0E7005FC8D5 /* MainView.swift */; };
 		B527ABEF436E3B7798FBA703 /* Pods_alpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B3949F3B59553C7484D58B /* Pods_alpha.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		3D9DFBFA1F39300D006A4304 /* alphaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alphaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9DFBFE1F39300D006A4304 /* alphaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphaUITests.swift; sourceTree = "<group>"; };
 		3D9DFC001F39300D006A4304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE62F4E1F52F0E7005FC8D5 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		59DD78063C794025E7E1597A /* Pods_alphaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alphaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB6587A1FB6E300931A6884 /* Pods-alpha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alpha.release.xcconfig"; path = "Pods/Target Support Files/Pods-alpha/Pods-alpha.release.xcconfig"; sourceTree = "<group>"; };
 		C6CC855C9B0CB6A860B83B49 /* Pods-alpha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alpha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-alpha/Pods-alpha.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				3D9DFBEA1F39300C006A4304 /* Info.plist */,
 				3D113E051F4BD9DB00A3B1C1 /* GoogleService-Info.plist */,
 				3D9DFBE21F39300C006A4304 /* alpha.xcdatamodeld */,
+				3DE62F4E1F52F0E7005FC8D5 /* MainView.swift */,
 			);
 			path = alpha;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			files = (
 				3D9DFBDE1F39300C006A4304 /* ViewController.swift in Sources */,
 				3D9DFBE41F39300C006A4304 /* alpha.xcdatamodeld in Sources */,
+				3DE62F4F1F52F0E7005FC8D5 /* MainView.swift in Sources */,
 				3D9DFBDC1F39300C006A4304 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
