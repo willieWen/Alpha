@@ -1,0 +1,10 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "d0b054d49e37dfe3bceb2a50b63c4b9f"
+build_time: [559093886, 554153000]
+inputs:
+  "/Users/william/Desktop/alpha/alpha/ViewController.swift": [557886476, 0]
+  "/Users/william/Desktop/alpha/alpha/ForgotPasswordController.swift": [557846428, 0]
+  "/Users/william/Desktop/alpha/alpha/NetworkingSerivce.swift": [558931749, 0]
+  "/Users/william/Desktop/alpha/alpha/AppCoordinator.swift": [557820939, 0]
+  "/Users/william/Desktop/alpha/alpha/HomePageController.swift": [557844719, 0]
+  "/Users/william/Desktop/alpha/alpha/AppDelegate.swift": [557825141, 0]

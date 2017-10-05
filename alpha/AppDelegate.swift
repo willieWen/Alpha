@@ -14,15 +14,16 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+  //  var appcoordinator : appCoordinator!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure()
-        return true
-    }
-    
-    func loggedIn {
-        
+        // appcoordinator = appCoordinator(window: window)
+        let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let logInPage:ViewController = storyBoard.instantiateViewController(withIdentifier: "LogInViewController") as! ViewController
+        self.window?.rootViewController = logInPage
+    return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
