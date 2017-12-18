@@ -21,7 +21,6 @@
 		3D9DFBE91F39300C006A4304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DFBE71F39300C006A4304 /* LaunchScreen.storyboard */; };
 		3D9DFBF41F39300C006A4304 /* alphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DFBF31F39300C006A4304 /* alphaTests.swift */; };
 		3D9DFBFF1F39300D006A4304 /* alphaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DFBFE1F39300D006A4304 /* alphaUITests.swift */; };
-		3DAA18711F80791D00529618 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA18701F80791D00529618 /* UserController.swift */; };
 		3DAB6EBC1F5D867D00C8AA80 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB6EBB1F5D867D00C8AA80 /* ForgotPasswordController.swift */; };
 		3DB75B731F6DDF6F00ADE685 /* NetworkingSerivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB75B721F6DDF6F00ADE685 /* NetworkingSerivce.swift */; };
 		3DE62F4F1F52F0E7005FC8D5 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE62F4E1F52F0E7005FC8D5 /* HomePageController.swift */; };
@@ -68,7 +67,6 @@
 		3D9DFBFA1F39300D006A4304 /* alphaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alphaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9DFBFE1F39300D006A4304 /* alphaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphaUITests.swift; sourceTree = "<group>"; };
 		3D9DFC001F39300D006A4304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DAA18701F80791D00529618 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		3DAB6EBB1F5D867D00C8AA80 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 		3DB75B721F6DDF6F00ADE685 /* NetworkingSerivce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingSerivce.swift; sourceTree = "<group>"; };
 		3DE62F4E1F52F0E7005FC8D5 /* HomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 				3D9DFBDD1F39300C006A4304 /* ViewController.swift */,
 				3D8651A81F5D044A00306283 /* AppCoordinator.swift */,
 				3DFC5F0A1F70B9E80066F983 /* ProfileViewController.swift */,
-				3DAA18701F80791D00529618 /* UserController.swift */,
 				3D9DFBDF1F39300C006A4304 /* Main.storyboard */,
 				3D9DFBE51F39300C006A4304 /* Assets.xcassets */,
 				3D9DFBE71F39300C006A4304 /* LaunchScreen.storyboard */,
@@ -380,7 +377,6 @@
 				3D9DFBDE1F39300C006A4304 /* ViewController.swift in Sources */,
 				3DAB6EBC1F5D867D00C8AA80 /* ForgotPasswordController.swift in Sources */,
 				3D9AD8781F81EE9C00B8993F /* FileUploadManager.swift in Sources */,
-				3DAA18711F80791D00529618 /* UserController.swift in Sources */,
 				3D9DFBE41F39300C006A4304 /* alpha.xcdatamodeld in Sources */,
 				3DB75B731F6DDF6F00ADE685 /* NetworkingSerivce.swift in Sources */,
 				3D8651A91F5D044A00306283 /* AppCoordinator.swift in Sources */,

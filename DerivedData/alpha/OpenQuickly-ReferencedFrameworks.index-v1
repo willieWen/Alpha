@@ -10,15 +10,15 @@
 	<string>GoogleMobileAds</string>
 	<string>FirebaseDatabase</string>
 	<string>FirebaseAnalytics</string>
-	<string>sys</string>
 	<string>UIKit</string>
+	<string>sys</string>
 	<string>FirebaseRemoteConfig</string>
 	<string>XCTest</string>
+	<string>alpha</string>
 	<string>WatchKit</string>
 	<string>FirebaseAuth</string>
-	<string>FirebaseCrash</string>
 	<string>FirebaseMessaging</string>
-	<string>alpha</string>
+	<string>FirebaseCrash</string>
 	<string>FirebaseCore</string>
 	<string>FirebaseInvites</string>
 	<string>FirebaseStorage</string>
