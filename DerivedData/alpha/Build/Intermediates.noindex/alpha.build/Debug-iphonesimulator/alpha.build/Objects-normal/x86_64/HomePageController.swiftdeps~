@@ -734,5 +734,5 @@ depends-external:
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
 interface-hash: "40cce1bdebf8190db3132517287e3868"

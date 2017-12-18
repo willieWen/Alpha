@@ -287,14 +287,6 @@ SWIFT_CLASS("_TtC5alpha21ProfileViewController")
 @end
 
 
-SWIFT_CLASS("_TtC5alpha4User")
-@interface User : NSObject
-@property (nonatomic, copy) NSString * _Nullable email;
-@property (nonatomic, copy) NSString * _Nullable password;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC5alpha14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailField;

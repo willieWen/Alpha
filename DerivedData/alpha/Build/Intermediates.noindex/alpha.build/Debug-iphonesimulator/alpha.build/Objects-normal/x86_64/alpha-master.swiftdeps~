@@ -1,6 +1,6 @@
-version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
-options: "006e0c784fbd94c15a6de21a6af1efff"
-build_time: [1512302217, 417992000]
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "4788d61c7bc1e6ba8d2bd0044504db79"
+build_time: [1513568554, 327061000]
 inputs:
   "/Users/william/Desktop/alpha/alpha/availabilityTableViewCell.swift": [1506949195, 0]
   "/Users/william/Desktop/alpha/alpha/ViewController.swift": [1506824072, 0]
