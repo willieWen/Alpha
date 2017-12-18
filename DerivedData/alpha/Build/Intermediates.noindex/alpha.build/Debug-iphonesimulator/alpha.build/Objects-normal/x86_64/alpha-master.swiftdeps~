@@ -1,0 +1,16 @@
+version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+options: "006e0c784fbd94c15a6de21a6af1efff"
+build_time: [1512302217, 417992000]
+inputs:
+  "/Users/william/Desktop/alpha/alpha/availabilityTableViewCell.swift": [1506949195, 0]
+  "/Users/william/Desktop/alpha/alpha/ViewController.swift": [1506824072, 0]
+  "/Users/william/Desktop/alpha/alpha/ForgotPasswordController.swift": [1504531228, 0]
+  "/Users/william/Desktop/alpha/alpha/FileUploadManager.swift": [1506918125, 0]
+  "/Users/william/Desktop/alpha/alpha/UserController.swift": [1506820685, 0]
+  "/Users/william/Desktop/alpha/alpha/NetworkingSerivce.swift": [1505786769, 0]
+  "/Users/william/Desktop/alpha/alpha/AppCoordinator.swift": [1504505739, 0]
+  "/Users/william/Desktop/alpha/alpha/HomePageController.swift": [1506942499, 0]
+  "/Users/william/Desktop/alpha/alpha/ProfileViewController.swift": [1506920117, 0]
+  "/Users/william/Desktop/alpha/alpha/Availability.swift": [1506949342, 0]
+  "/Users/william/Desktop/alpha/alpha/AvailabilityController.swift": [1506978688, 0]
+  "/Users/william/Desktop/alpha/alpha/AppDelegate.swift": [1504509941, 0]
