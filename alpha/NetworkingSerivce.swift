@@ -12,10 +12,10 @@ import FirebaseStorage
 
 struct networkingService {
     
-    let databaseRef = FIRDatabase.database().reference()
-    let storageRef = FIRStorage.storage().reference()
+    let databaseRef = Database.database().reference()
+    let storageRef = Storage.storage().reference()
     
-    private func saveInfo(user: FIRUser!, username: String, password: String, country: String) {
+    private func saveInfo(user: User!, username: String, password: String, country: String) {
     //create user dictionary info
         let userInfo = ["email": user.email!, "username": username, "country": country, "uid": user.uid, "photoUrl": String(describing: user.photoURL!)]
     //create user reference
@@ -27,7 +27,7 @@ struct networkingService {
     }
     
     func signIn(email: String, password: String) {
-        FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+        Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
             if error == nil {
                 print("\(user?.displayName!) has signed in succesfully")
             }
@@ -37,18 +37,18 @@ struct networkingService {
         })
     }
     
-    private func setUserInfo(user: FIRUser, username: String, password: String, country: String, data: NSData!) {
+    private func setUserInfo(user: User, username: String, password: String, country: String, data: NSData!) {
         //create path for image
         let imagePath = "profileImage\(user.uid)/userPic.jpg"
         // create image reference
         let imageRef = storageRef.child(imagePath)
         //create metaData for the image
-        let metaData = FIRStorageMetadata()
+        let metaData = StorageMetadata()
         metaData.contentType = "image/jpeg"
         //save the user image in the firebase storage file
-        imageRef.put(data as Data, metadata: metaData) { (metaData, error) in
+        imageRef.putData(data as Data, metadata: metaData) { (metaData, error) in
             if error == nil {
-                    let changeRequest = user.profileChangeRequest()
+                let changeRequest = user.createProfileChangeRequest()
                 changeRequest.displayName = username
                 changeRequest.photoURL = metaData?.downloadURL()
                 changeRequest.commitChanges(completion: { (error) in

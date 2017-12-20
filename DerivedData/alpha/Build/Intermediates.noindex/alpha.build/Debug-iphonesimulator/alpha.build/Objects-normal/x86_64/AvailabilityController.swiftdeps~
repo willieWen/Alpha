@@ -18,16 +18,15 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
 - !private ">"
-- !private "AnyObject"
 - "AssignmentPrecedence"
 - "AvaialabilityModel"
 - "AvailabilityController"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
+- !private "Database"
+- "DatabaseReference"
 - !private "Dictionary"
 - !private "FIRDataSnapshot"
-- !private "FIRDatabase"
-- "FIRDatabaseReference"
 - "IndexPath"
 - "Int"
 - "String"
@@ -42,20 +41,17 @@ depends-top-level:
 - "UIViewController"
 - !private "availabilityTableViewCell"
 depends-member:
-- !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - ["Sa", "init"]
 - !private ["Sa", "removeAll"]
 - !private ["Sa", "subscript"]
 - !private ["5alpha18AvaialabilityModelC", "date"]
 - !private ["5alpha18AvaialabilityModelC", "id"]
-- !private ["5alpha18AvaialabilityModelC", "init"]
 - !private ["5alpha18AvaialabilityModelC", "time"]
-- !private ["5alpha22AvailabilityControllerC", "AnyObject"]
 - ["5alpha22AvailabilityControllerC", "AvaialabilityModel"]
+- !private ["5alpha22AvailabilityControllerC", "Database"]
+- ["5alpha22AvailabilityControllerC", "DatabaseReference"]
 - !private ["5alpha22AvailabilityControllerC", "FIRDataSnapshot"]
-- !private ["5alpha22AvailabilityControllerC", "FIRDatabase"]
-- ["5alpha22AvailabilityControllerC", "FIRDatabaseReference"]
 - ["5alpha22AvailabilityControllerC", "IndexPath"]
 - ["5alpha22AvailabilityControllerC", "Int"]
 - ["5alpha22AvailabilityControllerC", "String"]
@@ -100,7 +96,6 @@ depends-member:
 - ["5alpha22AvailabilityControllerC", "viewDidLoad"]
 - ["5alpha22AvailabilityControllerC", "viewForZooming"]
 - ["5alpha22AvailabilityControllerC", "viewForZoomingInScrollView"]
-- !private ["s23BidirectionalCollectionP", "append"]
 - !private ["s23BidirectionalCollectionP", "count"]
 - ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "removeAll"]
@@ -113,13 +108,12 @@ depends-member:
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "timeLabel"]
 - ["s7CVarArgP", "AvaialabilityModel"]
-- !private ["s7CVarArgP", "FIRDatabase"]
+- !private ["s7CVarArgP", "Database"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "addAction"]
 - !private ["s7CVarArgP", "addTextField"]
 - !private ["s7CVarArgP", "allObjects"]
-- !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "availabilityList"]
 - !private ["s7CVarArgP", "availabilityRef"]
 - !private ["s7CVarArgP", "child"]
@@ -168,11 +162,9 @@ depends-member:
 - !private ["s7CVarArgP", "timeLabel"]
 - !private ["s7CVarArgP", "updateDate"]
 - !private ["s7CVarArgP", "updateDateTime"]
-- !private ["s7CVarArgP", "value"]
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - ["s7CVarArgP", ""]
-- !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "count"]
 - ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "removeAll"]
@@ -181,13 +173,12 @@ depends-member:
 - !private ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "row"]
 - ["s28CustomDebugStringConvertibleP", "AvaialabilityModel"]
-- !private ["s28CustomDebugStringConvertibleP", "FIRDatabase"]
+- !private ["s28CustomDebugStringConvertibleP", "Database"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "addAction"]
 - !private ["s28CustomDebugStringConvertibleP", "addTextField"]
 - !private ["s28CustomDebugStringConvertibleP", "allObjects"]
-- !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "availabilityList"]
 - !private ["s28CustomDebugStringConvertibleP", "availabilityRef"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
@@ -237,28 +228,25 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "timeLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "updateDate"]
 - !private ["s28CustomDebugStringConvertibleP", "updateDateTime"]
-- !private ["s28CustomDebugStringConvertibleP", "value"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
-- !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "removeAll"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "subscript"]
 - ["s23CustomStringConvertibleP", "AvaialabilityModel"]
-- !private ["s23CustomStringConvertibleP", "FIRDatabase"]
+- !private ["s23CustomStringConvertibleP", "Database"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addAction"]
 - !private ["s23CustomStringConvertibleP", "addTextField"]
 - !private ["s23CustomStringConvertibleP", "allObjects"]
-- !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "availabilityList"]
 - !private ["s23CustomStringConvertibleP", "availabilityRef"]
 - !private ["s23CustomStringConvertibleP", "child"]
@@ -308,27 +296,38 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "timeLabel"]
 - !private ["s23CustomStringConvertibleP", "updateDate"]
 - !private ["s23CustomStringConvertibleP", "updateDateTime"]
-- !private ["s23CustomStringConvertibleP", "value"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["SC13DataEventTypeO", "value"]
+- !private ["So12DataSnapshotC", "children"]
+- !private ["So12DataSnapshotC", "childrenCount"]
+- !private ["So8DatabaseC", "database"]
+- !private ["So8DatabaseC", "reference"]
+- !private ["So13DatabaseQueryC", "child"]
+- !private ["So13DatabaseQueryC", "childByAutoId"]
+- !private ["So13DatabaseQueryC", "key"]
+- !private ["So13DatabaseQueryC", "observe"]
+- !private ["So13DatabaseQueryC", "setValue"]
+- !private ["So17DatabaseReferenceC", "child"]
+- !private ["So17DatabaseReferenceC", "childByAutoId"]
+- !private ["So17DatabaseReferenceC", "key"]
+- !private ["So17DatabaseReferenceC", "observe"]
+- !private ["So17DatabaseReferenceC", "setValue"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "append"]
 - !private ["s9DecodableP", "count"]
 - ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "removeAll"]
 - !private ["s9DecodableP", "row"]
 - !private ["s9DecodableP", "subscript"]
-- !private ["s10DictionaryV", "subscript"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "append"]
 - !private ["s9EncodableP", "count"]
 - ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "removeAll"]
 - !private ["s9EncodableP", "row"]
 - !private ["s9EncodableP", "subscript"]
 - ["s9EquatableP", "AvaialabilityModel"]
-- !private ["s9EquatableP", "FIRDatabase"]
+- !private ["s9EquatableP", "Database"]
 - !private ["s9EquatableP", "UIAlertAction"]
 - !private ["s9EquatableP", "UIAlertController"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
@@ -387,35 +386,17 @@ depends-member:
 - ["s9EquatableP", "viewForZooming"]
 - ["s9EquatableP", "viewForZoomingInScrollView"]
 - ["s9EquatableP", ""]
-- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["SC16FIRDataEventTypeO", "value"]
-- !private ["So15FIRDataSnapshotC", "children"]
-- !private ["So15FIRDataSnapshotC", "childrenCount"]
-- !private ["So15FIRDataSnapshotC", "value"]
-- !private ["So11FIRDatabaseC", "database"]
-- !private ["So11FIRDatabaseC", "reference"]
-- !private ["So16FIRDatabaseQueryC", "child"]
-- !private ["So16FIRDatabaseQueryC", "childByAutoId"]
-- !private ["So16FIRDatabaseQueryC", "key"]
-- !private ["So16FIRDatabaseQueryC", "observe"]
-- !private ["So16FIRDatabaseQueryC", "setValue"]
-- !private ["So20FIRDatabaseReferenceC", "child"]
-- !private ["So20FIRDatabaseReferenceC", "childByAutoId"]
-- !private ["So20FIRDatabaseReferenceC", "key"]
-- !private ["So20FIRDatabaseReferenceC", "observe"]
-- !private ["So20FIRDatabaseReferenceC", "setValue"]
 - ["s8HashableP", "AvaialabilityModel"]
-- !private ["s8HashableP", "FIRDatabase"]
+- !private ["s8HashableP", "Database"]
 - !private ["s8HashableP", "UIAlertAction"]
 - !private ["s8HashableP", "UIAlertController"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
@@ -478,14 +459,13 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["s17MutableCollectionP", "append"]
 - !private ["s17MutableCollectionP", "count"]
 - ["s17MutableCollectionP", "init"]
 - !private ["s17MutableCollectionP", "removeAll"]
 - !private ["s17MutableCollectionP", "row"]
 - !private ["s17MutableCollectionP", "subscript"]
 - ["So8NSCodingP", "AvaialabilityModel"]
-- !private ["So8NSCodingP", "FIRDatabase"]
+- !private ["So8NSCodingP", "Database"]
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertController"]
 - !private ["So8NSCodingP", "addAction"]
@@ -532,7 +512,7 @@ depends-member:
 - !private ["So9NSCopyingP", "init"]
 - !private ["So12NSEnumeratorC", "allObjects"]
 - ["So26NSExtensionRequestHandlingP", "AvaialabilityModel"]
-- !private ["So26NSExtensionRequestHandlingP", "FIRDatabase"]
+- !private ["So26NSExtensionRequestHandlingP", "Database"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
 - !private ["So26NSExtensionRequestHandlingP", "addAction"]
@@ -575,11 +555,10 @@ depends-member:
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "init"]
-- !private ["So8NSObjectC", "AnyObject"]
 - ["So8NSObjectC", "AvaialabilityModel"]
+- !private ["So8NSObjectC", "Database"]
+- ["So8NSObjectC", "DatabaseReference"]
 - !private ["So8NSObjectC", "FIRDataSnapshot"]
-- !private ["So8NSObjectC", "FIRDatabase"]
-- ["So8NSObjectC", "FIRDatabaseReference"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "String"]
@@ -638,12 +617,11 @@ depends-member:
 - ["So8NSObjectC", "update"]
 - ["So8NSObjectC", "updateDate"]
 - ["So8NSObjectC", "updateDateTime"]
-- !private ["So8NSObjectC", "value"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - ["So16NSObjectProtocolP", "AvaialabilityModel"]
-- !private ["So16NSObjectProtocolP", "FIRDatabase"]
+- !private ["So16NSObjectProtocolP", "Database"]
 - !private ["So16NSObjectProtocolP", "UIAlertAction"]
 - !private ["So16NSObjectProtocolP", "UIAlertController"]
 - !private ["So16NSObjectProtocolP", "addAction"]
@@ -694,19 +672,16 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "timeLabel"]
 - !private ["So16NSObjectProtocolP", "updateDate"]
 - !private ["So16NSObjectProtocolP", "updateDateTime"]
-- !private ["So16NSObjectProtocolP", "value"]
 - ["So16NSObjectProtocolP", "viewForZooming"]
 - ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
-- !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s22RandomAccessCollectionP", "count"]
 - ["s22RandomAccessCollectionP", "init"]
 - !private ["s22RandomAccessCollectionP", "removeAll"]
 - !private ["s22RandomAccessCollectionP", "row"]
 - !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s26RangeReplaceableCollectionP", "append"]
 - !private ["s26RangeReplaceableCollectionP", "count"]
 - ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "removeAll"]
@@ -716,7 +691,6 @@ depends-member:
 - !private ["s16RawRepresentableP", "value"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["s8SequenceP", "allObjects"]
-- !private ["s8SequenceP", "append"]
 - !private ["s8SequenceP", "count"]
 - ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "removeAll"]
@@ -744,7 +718,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "timeLabel"]
 - ["So21UIAppearanceContainerP", "AvaialabilityModel"]
-- !private ["So21UIAppearanceContainerP", "FIRDatabase"]
+- !private ["So21UIAppearanceContainerP", "Database"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
 - !private ["So21UIAppearanceContainerP", "addAction"]
@@ -789,7 +763,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
 - ["So21UIAppearanceContainerP", ""]
 - ["So18UIContentContainerP", "AvaialabilityModel"]
-- !private ["So18UIContentContainerP", "FIRDatabase"]
+- !private ["So18UIContentContainerP", "Database"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
 - !private ["So18UIContentContainerP", "addAction"]
@@ -843,7 +817,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "timeLabel"]
 - ["So18UIFocusEnvironmentP", "AvaialabilityModel"]
-- !private ["So18UIFocusEnvironmentP", "FIRDatabase"]
+- !private ["So18UIFocusEnvironmentP", "Database"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
 - !private ["So18UIFocusEnvironmentP", "addAction"]
@@ -897,7 +871,7 @@ depends-member:
 - !private ["So10UIKeyInputP", "text"]
 - !private ["So7UILabelC", "text"]
 - ["So30UIPasteConfigurationSupportingP", "AvaialabilityModel"]
-- !private ["So30UIPasteConfigurationSupportingP", "FIRDatabase"]
+- !private ["So30UIPasteConfigurationSupportingP", "Database"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "addAction"]
@@ -941,11 +915,10 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - ["So30UIPasteConfigurationSupportingP", ""]
-- !private ["So11UIResponderC", "AnyObject"]
 - ["So11UIResponderC", "AvaialabilityModel"]
+- !private ["So11UIResponderC", "Database"]
+- ["So11UIResponderC", "DatabaseReference"]
 - !private ["So11UIResponderC", "FIRDataSnapshot"]
-- !private ["So11UIResponderC", "FIRDatabase"]
-- ["So11UIResponderC", "FIRDatabaseReference"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "String"]
@@ -998,7 +971,7 @@ depends-member:
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
 - ["So30UIResponderStandardEditActionsP", "AvaialabilityModel"]
-- !private ["So30UIResponderStandardEditActionsP", "FIRDatabase"]
+- !private ["So30UIResponderStandardEditActionsP", "Database"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "addAction"]
@@ -1045,7 +1018,7 @@ depends-member:
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "reloadData"]
 - ["So20UIScrollViewDelegateP", "AvaialabilityModel"]
-- !private ["So20UIScrollViewDelegateP", "FIRDatabase"]
+- !private ["So20UIScrollViewDelegateP", "Database"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertAction"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertController"]
 - !private ["So20UIScrollViewDelegateP", "availabilityList"]
@@ -1087,7 +1060,7 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "textFields"]
 - ["So16UIStateRestoringP", "AvaialabilityModel"]
-- !private ["So16UIStateRestoringP", "FIRDatabase"]
+- !private ["So16UIStateRestoringP", "Database"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
 - !private ["So16UIStateRestoringP", "addAction"]
@@ -1131,7 +1104,7 @@ depends-member:
 - !private ["So15UITableViewCellC", "dateLabel"]
 - !private ["So15UITableViewCellC", "timeLabel"]
 - ["So21UITableViewDataSourceP", "AvaialabilityModel"]
-- !private ["So21UITableViewDataSourceP", "FIRDatabase"]
+- !private ["So21UITableViewDataSourceP", "Database"]
 - !private ["So21UITableViewDataSourceP", "UIAlertAction"]
 - !private ["So21UITableViewDataSourceP", "UIAlertController"]
 - !private ["So21UITableViewDataSourceP", "availabilityList"]
@@ -1167,7 +1140,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
 - ["So21UITableViewDataSourceP", ""]
 - ["So19UITableViewDelegateP", "AvaialabilityModel"]
-- !private ["So19UITableViewDelegateP", "FIRDatabase"]
+- !private ["So19UITableViewDelegateP", "Database"]
 - !private ["So19UITableViewDelegateP", "UIAlertAction"]
 - !private ["So19UITableViewDelegateP", "UIAlertController"]
 - !private ["So19UITableViewDelegateP", "availabilityList"]
@@ -1209,7 +1182,7 @@ depends-member:
 - !private ["So17UITextInputTraitsP", "text"]
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
 - ["So18UITraitEnvironmentP", "AvaialabilityModel"]
-- !private ["So18UITraitEnvironmentP", "FIRDatabase"]
+- !private ["So18UITraitEnvironmentP", "Database"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
 - !private ["So18UITraitEnvironmentP", "addAction"]
@@ -1258,11 +1231,10 @@ depends-member:
 - !private ["So6UIViewC", "reloadData"]
 - !private ["So6UIViewC", "text"]
 - !private ["So6UIViewC", "timeLabel"]
-- !private ["So16UIViewControllerC", "AnyObject"]
 - ["So16UIViewControllerC", "AvaialabilityModel"]
+- !private ["So16UIViewControllerC", "Database"]
+- ["So16UIViewControllerC", "DatabaseReference"]
 - !private ["So16UIViewControllerC", "FIRDataSnapshot"]
-- !private ["So16UIViewControllerC", "FIRDatabase"]
-- ["So16UIViewControllerC", "FIRDatabaseReference"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "String"]
@@ -1310,12 +1282,10 @@ depends-member:
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
 - ["So16UIViewControllerC", ""]
-- !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
 - ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "removeAll"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "append"]
 - !private ["s23_BidirectionalIndexableP", "count"]
 - ["s23_BidirectionalIndexableP", "init"]
 - !private ["s23_BidirectionalIndexableP", "removeAll"]
@@ -1326,7 +1296,6 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "timeLabel"]
-- !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "removeAll"]
@@ -1338,20 +1307,18 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "append"]
 - !private ["s10_IndexableP", "count"]
 - ["s10_IndexableP", "init"]
 - !private ["s10_IndexableP", "removeAll"]
 - !private ["s10_IndexableP", "row"]
 - !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "append"]
 - !private ["s14_IndexableBaseP", "count"]
 - ["s14_IndexableBaseP", "init"]
 - !private ["s14_IndexableBaseP", "removeAll"]
 - !private ["s14_IndexableBaseP", "row"]
 - !private ["s14_IndexableBaseP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "AvaialabilityModel"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRDatabase"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
@@ -1402,30 +1369,25 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timeLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateDate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateDateTime"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["s17_MutableIndexableP", "append"]
 - !private ["s17_MutableIndexableP", "count"]
 - ["s17_MutableIndexableP", "init"]
 - !private ["s17_MutableIndexableP", "removeAll"]
 - !private ["s17_MutableIndexableP", "row"]
 - !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
-- !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "removeAll"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "append"]
 - !private ["s22_RandomAccessIndexableP", "count"]
 - ["s22_RandomAccessIndexableP", "init"]
 - !private ["s22_RandomAccessIndexableP", "removeAll"]
 - !private ["s22_RandomAccessIndexableP", "row"]
 - !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
 - !private ["s26_RangeReplaceableIndexableP", "count"]
 - ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s26_RangeReplaceableIndexableP", "removeAll"]
@@ -1447,21 +1409,19 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "SC13DataEventTypeO"
+- !private "So12DataSnapshotC"
+- !private "So8DatabaseC"
+- !private "So13DatabaseQueryC"
+- !private "So17DatabaseReferenceC"
 - "s9DecodableP"
-- !private "s10DictionaryV"
 - "s9EncodableP"
 - "s9EquatableP"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "SC16FIRDataEventTypeO"
-- !private "So15FIRDataSnapshotC"
-- !private "So11FIRDatabaseC"
-- !private "So16FIRDatabaseQueryC"
-- !private "So20FIRDatabaseReferenceC"
 - "s8HashableP"
 - !private "10Foundation9IndexPathV"
 - !private "s25LosslessStringConvertibleP"
@@ -1562,60 +1522,71 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
 - "/Users/william/Desktop/alpha/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/william/Desktop/alpha/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-interface-hash: "cd2ab200d931740f6808df67ff732bef"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "df0249e7be42e45dd37e11d739839f3d"

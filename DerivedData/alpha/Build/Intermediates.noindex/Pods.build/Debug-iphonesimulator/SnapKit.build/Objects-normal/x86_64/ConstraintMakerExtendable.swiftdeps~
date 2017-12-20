@@ -31,6 +31,7 @@ depends-member:
 - !private ["7SnapKit20ConstraintAttributesV", "rightMargin"]
 - !private ["7SnapKit20ConstraintAttributesV", "size"]
 - !private ["7SnapKit20ConstraintAttributesV", "top"]
+- !private ["7SnapKit20ConstraintAttributesV", "topMargin"]
 - !private ["7SnapKit20ConstraintAttributesV", "trailing"]
 - !private ["7SnapKit20ConstraintAttributesV", "trailingMargin"]
 - !private ["7SnapKit20ConstraintAttributesV", "width"]
@@ -60,6 +61,7 @@ depends-member:
 - ["7SnapKit25ConstraintMakerExtendableC", "rightMargin"]
 - ["7SnapKit25ConstraintMakerExtendableC", "size"]
 - ["7SnapKit25ConstraintMakerExtendableC", "top"]
+- ["7SnapKit25ConstraintMakerExtendableC", "topMargin"]
 - ["7SnapKit25ConstraintMakerExtendableC", "trailing"]
 - ["7SnapKit25ConstraintMakerExtendableC", "trailingMargin"]
 - ["7SnapKit25ConstraintMakerExtendableC", "width"]
@@ -87,6 +89,7 @@ depends-member:
 - ["7SnapKit24ConstraintMakerRelatableC", "rightMargin"]
 - ["7SnapKit24ConstraintMakerRelatableC", "size"]
 - ["7SnapKit24ConstraintMakerRelatableC", "top"]
+- ["7SnapKit24ConstraintMakerRelatableC", "topMargin"]
 - ["7SnapKit24ConstraintMakerRelatableC", "trailing"]
 - ["7SnapKit24ConstraintMakerRelatableC", "trailingMargin"]
 - ["7SnapKit24ConstraintMakerRelatableC", "width"]
@@ -111,6 +114,7 @@ depends-member:
 - !private ["s9EquatableP", "rightMargin"]
 - !private ["s9EquatableP", "size"]
 - !private ["s9EquatableP", "top"]
+- !private ["s9EquatableP", "topMargin"]
 - !private ["s9EquatableP", "trailing"]
 - !private ["s9EquatableP", "trailingMargin"]
 - !private ["s9EquatableP", "width"]
@@ -134,6 +138,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "rightMargin"]
 - !private ["s25ExpressibleByArrayLiteralP", "size"]
 - !private ["s25ExpressibleByArrayLiteralP", "top"]
+- !private ["s25ExpressibleByArrayLiteralP", "topMargin"]
 - !private ["s25ExpressibleByArrayLiteralP", "trailing"]
 - !private ["s25ExpressibleByArrayLiteralP", "trailingMargin"]
 - !private ["s25ExpressibleByArrayLiteralP", "width"]
@@ -157,6 +162,7 @@ depends-member:
 - !private ["s9OptionSetP", "rightMargin"]
 - !private ["s9OptionSetP", "size"]
 - !private ["s9OptionSetP", "top"]
+- !private ["s9OptionSetP", "topMargin"]
 - !private ["s9OptionSetP", "trailing"]
 - !private ["s9OptionSetP", "trailingMargin"]
 - !private ["s9OptionSetP", "width"]
@@ -180,6 +186,7 @@ depends-member:
 - !private ["s16RawRepresentableP", "rightMargin"]
 - !private ["s16RawRepresentableP", "size"]
 - !private ["s16RawRepresentableP", "top"]
+- !private ["s16RawRepresentableP", "topMargin"]
 - !private ["s16RawRepresentableP", "trailing"]
 - !private ["s16RawRepresentableP", "trailingMargin"]
 - !private ["s16RawRepresentableP", "width"]
@@ -203,6 +210,7 @@ depends-member:
 - !private ["s10SetAlgebraP", "rightMargin"]
 - !private ["s10SetAlgebraP", "size"]
 - !private ["s10SetAlgebraP", "top"]
+- !private ["s10SetAlgebraP", "topMargin"]
 - !private ["s10SetAlgebraP", "trailing"]
 - !private ["s10SetAlgebraP", "trailingMargin"]
 - !private ["s10SetAlgebraP", "width"]
@@ -233,14 +241,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/william/Desktop/alpha/Pods/Target Support Files/SnapKit/SnapKit-umbrella.h"
 - "/Users/william/Desktop/alpha/DerivedData/alpha/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/SnapKit.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "5cf2f6bd09442d87b25329899422f30f"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "ca70bab411a271582db7e31e17ce25b7"

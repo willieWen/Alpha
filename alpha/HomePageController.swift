@@ -16,13 +16,13 @@ class HomePageController: UIViewController {
     
     @IBOutlet weak var emailLabel: UILabel!
     
-    var ref:FIRDatabaseReference!
+    var ref:DatabaseReference!
     var refHandle: UInt!
     var fileUploadManager = FileUploadManager()
     
     @IBAction func logOutTapped(_ sender: Any) {
         do {
-            try FIRAuth.auth()?.signOut()
+            try Auth.auth().signOut()
             
             //self.dismiss(animated: true, completion: nil)
             let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -37,11 +37,11 @@ class HomePageController: UIViewController {
     }
     
     override func viewDidLoad() {
-        ref = FIRDatabase.database().reference()
-        refHandle = ref.observe(FIRDataEventType.value, with: { (snapshot) in
+        ref = Database.database().reference()
+        refHandle = ref.observe(DataEventType.value, with: { (snapshot) in
             let dataDict = snapshot.value as! [String: AnyObject]
         })
-        let userID: String = (FIRAuth.auth()?.currentUser?.uid)!
+        let userID: String = (Auth.auth().currentUser?.uid)!
         ref.child("Users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
             if let value = snapshot.value as? [String:AnyObject] {
                 let email = value["Email"] as! String

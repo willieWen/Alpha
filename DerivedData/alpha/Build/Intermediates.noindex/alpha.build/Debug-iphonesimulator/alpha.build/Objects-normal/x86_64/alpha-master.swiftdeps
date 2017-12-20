@@ -1,15 +1,15 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "4788d61c7bc1e6ba8d2bd0044504db79"
-build_time: [1513587587, 670707000]
+options: "0d4921924034148da69b4ae5a002e3f9"
+build_time: [1513601007, 680876000]
 inputs:
-  "/Users/william/Desktop/alpha/alpha/availabilityTableViewCell.swift": [1506949195, 0]
-  "/Users/william/Desktop/alpha/alpha/ViewController.swift": [1506824072, 0]
-  "/Users/william/Desktop/alpha/alpha/ForgotPasswordController.swift": [1504531228, 0]
-  "/Users/william/Desktop/alpha/alpha/FileUploadManager.swift": [1506918125, 0]
-  "/Users/william/Desktop/alpha/alpha/NetworkingSerivce.swift": [1505786769, 0]
-  "/Users/william/Desktop/alpha/alpha/AppCoordinator.swift": [1504505739, 0]
-  "/Users/william/Desktop/alpha/alpha/HomePageController.swift": [1506942499, 0]
-  "/Users/william/Desktop/alpha/alpha/ProfileViewController.swift": [1506920117, 0]
-  "/Users/william/Desktop/alpha/alpha/Availability.swift": [1506949342, 0]
-  "/Users/william/Desktop/alpha/alpha/AvailabilityController.swift": [1506978688, 0]
-  "/Users/william/Desktop/alpha/alpha/AppDelegate.swift": [1504509941, 0]
+  "/Users/william/Desktop/alpha/alpha/availabilityTableViewCell.swift": [1513600034, 0]
+  "/Users/william/Desktop/alpha/alpha/ViewController.swift": [1513600916, 0]
+  "/Users/william/Desktop/alpha/alpha/ForgotPasswordController.swift": [1513600034, 0]
+  "/Users/william/Desktop/alpha/alpha/FileUploadManager.swift": [1513600916, 0]
+  "/Users/william/Desktop/alpha/alpha/NetworkingSerivce.swift": [1513601007, 0]
+  "/Users/william/Desktop/alpha/alpha/AppCoordinator.swift": [1513600034, 0]
+  "/Users/william/Desktop/alpha/alpha/HomePageController.swift": [1513600767, 0]
+  "/Users/william/Desktop/alpha/alpha/ProfileViewController.swift": [1513600982, 0]
+  "/Users/william/Desktop/alpha/alpha/Availability.swift": [1513600034, 0]
+  "/Users/william/Desktop/alpha/alpha/AvailabilityController.swift": [1513600999, 0]
+  "/Users/william/Desktop/alpha/alpha/AppDelegate.swift": [1513600982, 0]

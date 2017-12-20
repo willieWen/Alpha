@@ -13,16 +13,14 @@ provides-member:
 provides-dynamic-lookup:
 - "uploadImage"
 depends-top-level:
-- !private "*"
-- !private "/"
 - "AssignmentPrecedence"
 - "Constants"
 - !private "Date"
 - "Double"
-- !private "FIRStorage"
-- !private "FIRStorageMetadata"
 - "FileUploadManager"
 - "NSObject"
+- !private "Storage"
+- !private "StorageMetadata"
 - "String"
 - "StringLiteralType"
 - "UIImage"
@@ -31,24 +29,17 @@ depends-top-level:
 - "Void"
 depends-member:
 - ["s23BidirectionalCollectionP", "init"]
-- !private ["s19BinaryFloatingPointP", "init"]
 - !private ["s7CVarArgP", "Constants"]
 - !private ["s7CVarArgP", "Date"]
-- !private ["s7CVarArgP", "Double"]
-- !private ["s7CVarArgP", "FIRStorage"]
-- !private ["s7CVarArgP", "FIRStorageMetadata"]
+- !private ["s7CVarArgP", "Storage"]
+- !private ["s7CVarArgP", "StorageMetadata"]
 - !private ["s7CVarArgP", "UIImageJPEGRepresentation"]
 - !private ["s7CVarArgP", "child"]
-- !private ["s7CVarArgP", "completedUnitCount"]
 - !private ["s7CVarArgP", "contentType"]
-- !private ["s7CVarArgP", "downloadURL"]
 - ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "observe"]
-- !private ["s7CVarArgP", "progress"]
 - !private ["s7CVarArgP", "put"]
 - !private ["s7CVarArgP", "reference"]
 - !private ["s7CVarArgP", "storage"]
-- !private ["s7CVarArgP", "totalUnitCount"]
 - ["s7CVarArgP", ""]
 - ["s10CollectionP", "init"]
 - ["s10ComparableP", "init"]
@@ -58,22 +49,16 @@ depends-member:
 - ["5alpha9ConstantsV", "profileImages"]
 - !private ["s28CustomDebugStringConvertibleP", "Constants"]
 - !private ["s28CustomDebugStringConvertibleP", "Date"]
-- !private ["s28CustomDebugStringConvertibleP", "Double"]
-- !private ["s28CustomDebugStringConvertibleP", "FIRStorage"]
-- !private ["s28CustomDebugStringConvertibleP", "FIRStorageMetadata"]
+- !private ["s28CustomDebugStringConvertibleP", "Storage"]
+- !private ["s28CustomDebugStringConvertibleP", "StorageMetadata"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImageJPEGRepresentation"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
-- !private ["s28CustomDebugStringConvertibleP", "completedUnitCount"]
 - !private ["s28CustomDebugStringConvertibleP", "contentType"]
-- !private ["s28CustomDebugStringConvertibleP", "downloadURL"]
 - ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "observe"]
-- !private ["s28CustomDebugStringConvertibleP", "progress"]
 - !private ["s28CustomDebugStringConvertibleP", "put"]
 - !private ["s28CustomDebugStringConvertibleP", "reference"]
 - !private ["s28CustomDebugStringConvertibleP", "storage"]
 - !private ["s28CustomDebugStringConvertibleP", "timeIntervalSince1970"]
-- !private ["s28CustomDebugStringConvertibleP", "totalUnitCount"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "timeIntervalSince1970"]
@@ -81,73 +66,44 @@ depends-member:
 - !private ["s17CustomReflectableP", "timeIntervalSince1970"]
 - !private ["s23CustomStringConvertibleP", "Constants"]
 - !private ["s23CustomStringConvertibleP", "Date"]
-- !private ["s23CustomStringConvertibleP", "Double"]
-- !private ["s23CustomStringConvertibleP", "FIRStorage"]
-- !private ["s23CustomStringConvertibleP", "FIRStorageMetadata"]
+- !private ["s23CustomStringConvertibleP", "Storage"]
+- !private ["s23CustomStringConvertibleP", "StorageMetadata"]
 - !private ["s23CustomStringConvertibleP", "UIImageJPEGRepresentation"]
 - !private ["s23CustomStringConvertibleP", "child"]
-- !private ["s23CustomStringConvertibleP", "completedUnitCount"]
 - !private ["s23CustomStringConvertibleP", "contentType"]
-- !private ["s23CustomStringConvertibleP", "downloadURL"]
 - ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "observe"]
-- !private ["s23CustomStringConvertibleP", "progress"]
 - !private ["s23CustomStringConvertibleP", "put"]
 - !private ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "storage"]
 - !private ["s23CustomStringConvertibleP", "timeIntervalSince1970"]
-- !private ["s23CustomStringConvertibleP", "totalUnitCount"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["10Foundation4DateV", "init"]
 - !private ["10Foundation4DateV", "timeIntervalSince1970"]
 - ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "timeIntervalSince1970"]
-- !private ["Sd", "init"]
 - ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "timeIntervalSince1970"]
 - !private ["s9EquatableP", "Constants"]
 - !private ["s9EquatableP", "Date"]
-- !private ["s9EquatableP", "Double"]
-- !private ["s9EquatableP", "FIRStorage"]
-- !private ["s9EquatableP", "FIRStorageMetadata"]
+- !private ["s9EquatableP", "Storage"]
+- !private ["s9EquatableP", "StorageMetadata"]
 - !private ["s9EquatableP", "UIImageJPEGRepresentation"]
 - !private ["s9EquatableP", "child"]
-- !private ["s9EquatableP", "completedUnitCount"]
 - !private ["s9EquatableP", "contentType"]
-- !private ["s9EquatableP", "downloadURL"]
 - ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "observe"]
-- !private ["s9EquatableP", "progress"]
 - !private ["s9EquatableP", "put"]
 - !private ["s9EquatableP", "reference"]
 - !private ["s9EquatableP", "storage"]
 - !private ["s9EquatableP", "timeIntervalSince1970"]
-- !private ["s9EquatableP", "totalUnitCount"]
 - ["s9EquatableP", ""]
-- !private ["s5ErrorP", "localizedDescription"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s25ExpressibleByFloatLiteralP", "init"]
-- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["So10FIRStorageC", "reference"]
-- !private ["So10FIRStorageC", "storage"]
-- !private ["So18FIRStorageMetadataC", "contentType"]
-- !private ["So18FIRStorageMetadataC", "downloadURL"]
-- !private ["So18FIRStorageMetadataC", "init"]
-- !private ["So24FIRStorageObservableTaskC", "observe"]
-- !private ["So19FIRStorageReferenceC", "child"]
-- !private ["So19FIRStorageReferenceC", "put"]
-- !private ["So14FIRStorageTaskC", "observe"]
-- !private ["So24FIRStorageTaskManagementP", "observe"]
-- !private ["So22FIRStorageTaskSnapshotC", "progress"]
-- !private ["SC20FIRStorageTaskStatusO", "progress"]
-- !private ["So20FIRStorageUploadTaskC", "observe"]
 - !private ["5alpha17FileUploadManagerC", "Constants"]
 - !private ["5alpha17FileUploadManagerC", "Date"]
 - ["5alpha17FileUploadManagerC", "Double"]
-- !private ["5alpha17FileUploadManagerC", "FIRStorage"]
-- !private ["5alpha17FileUploadManagerC", "FIRStorageMetadata"]
+- !private ["5alpha17FileUploadManagerC", "Storage"]
+- !private ["5alpha17FileUploadManagerC", "StorageMetadata"]
 - ["5alpha17FileUploadManagerC", "String"]
 - ["5alpha17FileUploadManagerC", "UIImage"]
 - !private ["5alpha17FileUploadManagerC", "UIImageJPEGRepresentation"]
@@ -156,31 +112,23 @@ depends-member:
 - ["5alpha17FileUploadManagerC", "deinit"]
 - ["5alpha17FileUploadManagerC", "init"]
 - ["5alpha17FileUploadManagerC", "uploadImage"]
-- !private ["s13FloatingPointP", "init"]
 - !private ["s8HashableP", "Constants"]
 - !private ["s8HashableP", "Date"]
-- !private ["s8HashableP", "Double"]
-- !private ["s8HashableP", "FIRStorage"]
-- !private ["s8HashableP", "FIRStorageMetadata"]
+- !private ["s8HashableP", "Storage"]
+- !private ["s8HashableP", "StorageMetadata"]
 - !private ["s8HashableP", "UIImageJPEGRepresentation"]
 - !private ["s8HashableP", "child"]
-- !private ["s8HashableP", "completedUnitCount"]
 - !private ["s8HashableP", "contentType"]
-- !private ["s8HashableP", "downloadURL"]
 - ["s8HashableP", "init"]
-- !private ["s8HashableP", "observe"]
-- !private ["s8HashableP", "progress"]
 - !private ["s8HashableP", "put"]
 - !private ["s8HashableP", "reference"]
 - !private ["s8HashableP", "storage"]
 - !private ["s8HashableP", "timeIntervalSince1970"]
-- !private ["s8HashableP", "totalUnitCount"]
 - ["s8HashableP", ""]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", "init"]
 - !private ["So9NSCopyingP", "contentType"]
-- !private ["So9NSCopyingP", "downloadURL"]
 - ["So9NSCopyingP", "init"]
 - ["So21NSItemProviderReadingP", "init"]
 - ["So21NSItemProviderWritingP", "init"]
@@ -188,66 +136,51 @@ depends-member:
 - !private ["So8NSObjectC", "Constants"]
 - !private ["So8NSObjectC", "Date"]
 - ["So8NSObjectC", "Double"]
-- !private ["So8NSObjectC", "FIRStorage"]
-- !private ["So8NSObjectC", "FIRStorageMetadata"]
+- !private ["So8NSObjectC", "Storage"]
+- !private ["So8NSObjectC", "StorageMetadata"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIImage"]
 - !private ["So8NSObjectC", "UIImageJPEGRepresentation"]
 - ["So8NSObjectC", "URL"]
 - ["So8NSObjectC", "Void"]
 - !private ["So8NSObjectC", "child"]
-- !private ["So8NSObjectC", "completedUnitCount"]
 - !private ["So8NSObjectC", "contentType"]
-- !private ["So8NSObjectC", "downloadURL"]
 - ["So8NSObjectC", "init"]
-- !private ["So8NSObjectC", "observe"]
-- !private ["So8NSObjectC", "progress"]
 - !private ["So8NSObjectC", "put"]
 - !private ["So8NSObjectC", "reference"]
 - !private ["So8NSObjectC", "storage"]
-- !private ["So8NSObjectC", "totalUnitCount"]
 - ["So8NSObjectC", "uploadImage"]
 - ["So8NSObjectC", ""]
 - !private ["So16NSObjectProtocolP", "Constants"]
 - !private ["So16NSObjectProtocolP", "Date"]
-- !private ["So16NSObjectProtocolP", "Double"]
-- !private ["So16NSObjectProtocolP", "FIRStorage"]
-- !private ["So16NSObjectProtocolP", "FIRStorageMetadata"]
+- !private ["So16NSObjectProtocolP", "Storage"]
+- !private ["So16NSObjectProtocolP", "StorageMetadata"]
 - !private ["So16NSObjectProtocolP", "UIImageJPEGRepresentation"]
 - !private ["So16NSObjectProtocolP", "child"]
-- !private ["So16NSObjectProtocolP", "completedUnitCount"]
 - !private ["So16NSObjectProtocolP", "contentType"]
-- !private ["So16NSObjectProtocolP", "downloadURL"]
 - ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "observe"]
-- !private ["So16NSObjectProtocolP", "progress"]
 - !private ["So16NSObjectProtocolP", "put"]
 - !private ["So16NSObjectProtocolP", "reference"]
 - !private ["So16NSObjectProtocolP", "storage"]
-- !private ["So16NSObjectProtocolP", "totalUnitCount"]
 - ["So16NSObjectProtocolP", ""]
 - ["So14NSSecureCodingP", "init"]
 - ["So8NSStringC", "init"]
-- !private ["s7NumericP", "init"]
-- !private ["So8ProgressC", "completedUnitCount"]
-- !private ["So8ProgressC", "totalUnitCount"]
 - ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s16RawRepresentableP", "progress"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "timeIntervalSince1970"]
 - ["s8SequenceP", "init"]
-- !private ["s13SignedNumericP", "init"]
-- !private ["s10StrideableP", "init"]
+- !private ["So7StorageC", "reference"]
+- !private ["So7StorageC", "storage"]
+- !private ["So15StorageMetadataC", "contentType"]
+- !private ["So15StorageMetadataC", "init"]
+- !private ["So16StorageReferenceC", "child"]
+- !private ["So16StorageReferenceC", "put"]
 - ["SS", "init"]
 - ["s14StringProtocolP", "init"]
 - ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", "init"]
 - ["s23_BidirectionalIndexableP", "init"]
-- !private ["s15_CVarArgAlignedP", "init"]
-- !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
@@ -257,33 +190,25 @@ depends-member:
 - ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Constants"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "Double"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRStorage"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRStorageMetadata"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Storage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "StorageMetadata"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImageJPEGRepresentation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "completedUnitCount"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentType"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "downloadURL"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "observe"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "progress"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "put"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "storage"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "totalUnitCount"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "timeIntervalSince1970"]
 - ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 - ["5alpha9ConstantsV13profileImagesV", "String"]
 - ["5alpha9ConstantsV13profileImagesV", "imagesFolder"]
 - ["5alpha9ConstantsV13profileImagesV", "init"]
 depends-nominal:
 - "s23BidirectionalCollectionP"
-- !private "s19BinaryFloatingPointP"
 - "s7CVarArgP"
 - "s10CollectionP"
 - "s10ComparableP"
@@ -294,26 +219,12 @@ depends-nominal:
 - "s23CustomStringConvertibleP"
 - !private "10Foundation4DateV"
 - "s9DecodableP"
-- !private "Sd"
 - "s9EncodableP"
 - "s9EquatableP"
-- !private "s5ErrorP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s25ExpressibleByFloatLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "So10FIRStorageC"
-- !private "So18FIRStorageMetadataC"
-- !private "So24FIRStorageObservableTaskC"
-- !private "So19FIRStorageReferenceC"
-- !private "So14FIRStorageTaskC"
-- !private "So24FIRStorageTaskManagementP"
-- !private "So22FIRStorageTaskSnapshotC"
-- !private "SC20FIRStorageTaskStatusO"
-- !private "So20FIRStorageUploadTaskC"
 - "5alpha17FileUploadManagerC"
-- !private "s13FloatingPointP"
 - "s8HashableP"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
@@ -326,24 +237,18 @@ depends-nominal:
 - "So16NSObjectProtocolP"
 - "So14NSSecureCodingP"
 - "So8NSStringC"
-- !private "s7NumericP"
-- !private "So8ProgressC"
 - "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
 - "s8SequenceP"
-- !private "s13SignedNumericP"
-- !private "s10StrideableP"
+- !private "So7StorageC"
+- !private "So15StorageMetadataC"
+- !private "So16StorageReferenceC"
 - "SS"
 - "s14StringProtocolP"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - "s23_BidirectionalIndexableP"
-- !private "s15_CVarArgAlignedP"
-- !private "s22_CVarArgPassedAsDoubleP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s33_ExpressibleByBuiltinFloatLiteralP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
@@ -354,7 +259,6 @@ depends-nominal:
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
 - "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - "s16_SwiftStringViewP"
 - "5alpha9ConstantsV13profileImagesV"
 depends-dynamic-lookup:
@@ -373,60 +277,71 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
 - "/Users/william/Desktop/alpha/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/william/Desktop/alpha/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 interface-hash: "b78e4c5a9435793c111859ec1c577650"

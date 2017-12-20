@@ -1,31 +1,27 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "ConstraintDSL"
-- "ConstraintBasicAttributesDSL"
 - "ConstraintAttributesDSL"
 provides-nominal:
 - "7SnapKit13ConstraintDSLP"
-- "7SnapKit28ConstraintBasicAttributesDSLP"
 - "7SnapKit23ConstraintAttributesDSLP"
 provides-member:
 - ["7SnapKit13ConstraintDSLP", ""]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", ""]
 - ["7SnapKit23ConstraintAttributesDSLP", ""]
-- ["7SnapKit13ConstraintDSLP", "setLabel"]
 - ["7SnapKit13ConstraintDSLP", "label"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "left"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "top"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "right"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "bottom"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "leading"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "trailing"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "width"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "height"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "centerX"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "centerY"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "edges"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "size"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "center"]
+- ["7SnapKit23ConstraintAttributesDSLP", "left"]
+- ["7SnapKit23ConstraintAttributesDSLP", "top"]
+- ["7SnapKit23ConstraintAttributesDSLP", "right"]
+- ["7SnapKit23ConstraintAttributesDSLP", "bottom"]
+- ["7SnapKit23ConstraintAttributesDSLP", "leading"]
+- ["7SnapKit23ConstraintAttributesDSLP", "trailing"]
+- ["7SnapKit23ConstraintAttributesDSLP", "width"]
+- ["7SnapKit23ConstraintAttributesDSLP", "height"]
+- ["7SnapKit23ConstraintAttributesDSLP", "centerX"]
+- ["7SnapKit23ConstraintAttributesDSLP", "centerY"]
+- ["7SnapKit23ConstraintAttributesDSLP", "edges"]
+- ["7SnapKit23ConstraintAttributesDSLP", "size"]
+- ["7SnapKit23ConstraintAttributesDSLP", "center"]
 - ["7SnapKit23ConstraintAttributesDSLP", "baseline"]
 - ["7SnapKit23ConstraintAttributesDSLP", "lastBaseline"]
 - ["7SnapKit23ConstraintAttributesDSLP", "firstBaseline"]
@@ -45,7 +41,6 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "ConstraintAttributes"
 - "ConstraintAttributesDSL"
-- "ConstraintBasicAttributesDSL"
 - "ConstraintDSL"
 - "ConstraintItem"
 - "FloatLiteralType"
@@ -84,36 +79,32 @@ depends-member:
 - !private ["7SnapKit23ConstraintAttributesDSLP", "ConstraintAttributes"]
 - ["7SnapKit23ConstraintAttributesDSLP", "ConstraintItem"]
 - ["7SnapKit23ConstraintAttributesDSLP", "baseline"]
+- ["7SnapKit23ConstraintAttributesDSLP", "bottom"]
 - ["7SnapKit23ConstraintAttributesDSLP", "bottomMargin"]
+- ["7SnapKit23ConstraintAttributesDSLP", "center"]
 - ["7SnapKit23ConstraintAttributesDSLP", "centerWithinMargins"]
+- ["7SnapKit23ConstraintAttributesDSLP", "centerX"]
 - ["7SnapKit23ConstraintAttributesDSLP", "centerXWithinMargins"]
+- ["7SnapKit23ConstraintAttributesDSLP", "centerY"]
 - ["7SnapKit23ConstraintAttributesDSLP", "centerYWithinMargins"]
+- ["7SnapKit23ConstraintAttributesDSLP", "edges"]
 - ["7SnapKit23ConstraintAttributesDSLP", "firstBaseline"]
+- ["7SnapKit23ConstraintAttributesDSLP", "height"]
 - ["7SnapKit23ConstraintAttributesDSLP", "lastBaseline"]
+- ["7SnapKit23ConstraintAttributesDSLP", "leading"]
 - ["7SnapKit23ConstraintAttributesDSLP", "leadingMargin"]
+- ["7SnapKit23ConstraintAttributesDSLP", "left"]
 - ["7SnapKit23ConstraintAttributesDSLP", "leftMargin"]
 - ["7SnapKit23ConstraintAttributesDSLP", "margins"]
+- ["7SnapKit23ConstraintAttributesDSLP", "right"]
 - ["7SnapKit23ConstraintAttributesDSLP", "rightMargin"]
+- ["7SnapKit23ConstraintAttributesDSLP", "size"]
 - !private ["7SnapKit23ConstraintAttributesDSLP", "target"]
+- ["7SnapKit23ConstraintAttributesDSLP", "top"]
 - ["7SnapKit23ConstraintAttributesDSLP", "topMargin"]
+- ["7SnapKit23ConstraintAttributesDSLP", "trailing"]
 - ["7SnapKit23ConstraintAttributesDSLP", "trailingMargin"]
-- !private ["7SnapKit28ConstraintBasicAttributesDSLP", "ConstraintAttributes"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "ConstraintItem"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "bottom"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "center"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "centerX"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "centerY"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "edges"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "height"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "leading"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "left"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "right"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "size"]
-- !private ["7SnapKit28ConstraintBasicAttributesDSLP", "target"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "top"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "trailing"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", "width"]
-- ["7SnapKit28ConstraintBasicAttributesDSLP", ""]
+- ["7SnapKit23ConstraintAttributesDSLP", "width"]
 - ["7SnapKit13ConstraintDSLP", "AnyObject"]
 - !private ["7SnapKit13ConstraintDSLP", "ConstraintAttributes"]
 - ["7SnapKit13ConstraintDSLP", "ConstraintItem"]
@@ -122,7 +113,6 @@ depends-member:
 - !private ["7SnapKit13ConstraintDSLP", "labelKey"]
 - !private ["7SnapKit13ConstraintDSLP", "objc_getAssociatedObject"]
 - !private ["7SnapKit13ConstraintDSLP", "objc_setAssociatedObject"]
-- ["7SnapKit13ConstraintDSLP", "setLabel"]
 - ["7SnapKit13ConstraintDSLP", "target"]
 - ["7SnapKit13ConstraintDSLP", ""]
 - !private ["7SnapKit14ConstraintItemC", "init"]
@@ -139,6 +129,7 @@ depends-member:
 - !private ["s9EquatableP", "edges"]
 - !private ["s9EquatableP", "firstBaseline"]
 - !private ["s9EquatableP", "height"]
+- !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "lastBaseline"]
 - !private ["s9EquatableP", "leading"]
 - !private ["s9EquatableP", "leadingMargin"]
@@ -259,7 +250,6 @@ depends-member:
 depends-nominal:
 - !private "7SnapKit20ConstraintAttributesV"
 - "7SnapKit23ConstraintAttributesDSLP"
-- "7SnapKit28ConstraintBasicAttributesDSLP"
 - "7SnapKit13ConstraintDSLP"
 - !private "7SnapKit14ConstraintItemC"
 - !private "7SnapKit25ConstraintRelatableTargetP"
@@ -293,4 +283,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "bfd60c1411f60f719aa3a3b4e78efb0b"
+interface-hash: "61a926033a2dabb48b3c0118f6482b44"

@@ -9,20 +9,22 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "=="
 - !private "AssignmentPrecedence"
+- !private "Auth"
 - !private "CastingPrecedence"
 - !private "Data"
+- "Database"
 - !private "Dictionary"
-- !private "FIRAuth"
-- "FIRDatabase"
-- "FIRStorage"
-- !private "FIRStorageMetadata"
-- !private "FIRUser"
 - !private "NSData"
+- "Storage"
+- !private "StorageMetadata"
 - "String"
 - !private "StringLiteralType"
+- !private "User"
 - "networkingService"
 - !private "print"
 depends-member:
+- !private ["So4AuthC", "auth"]
+- !private ["So4AuthC", "signIn"]
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "auth"]
@@ -36,7 +38,7 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "photoURL"]
 - !private ["s7CVarArgP", "profileChangeRequest"]
-- !private ["s7CVarArgP", "put"]
+- !private ["s7CVarArgP", "putData"]
 - ["s7CVarArgP", "reference"]
 - !private ["s7CVarArgP", "setValue"]
 - !private ["s7CVarArgP", "signIn"]
@@ -55,7 +57,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "photoURL"]
 - !private ["s28CustomDebugStringConvertibleP", "profileChangeRequest"]
-- !private ["s28CustomDebugStringConvertibleP", "put"]
+- !private ["s28CustomDebugStringConvertibleP", "putData"]
 - ["s28CustomDebugStringConvertibleP", "reference"]
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
 - !private ["s28CustomDebugStringConvertibleP", "signIn"]
@@ -77,12 +79,18 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "photoURL"]
 - !private ["s23CustomStringConvertibleP", "profileChangeRequest"]
-- !private ["s23CustomStringConvertibleP", "put"]
+- !private ["s23CustomStringConvertibleP", "putData"]
 - ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "setValue"]
 - !private ["s23CustomStringConvertibleP", "signIn"]
 - ["s23CustomStringConvertibleP", "storage"]
 - !private ["s23CustomStringConvertibleP", "uid"]
+- ["So8DatabaseC", "database"]
+- ["So8DatabaseC", "reference"]
+- !private ["So13DatabaseQueryC", "child"]
+- !private ["So13DatabaseQueryC", "setValue"]
+- !private ["So17DatabaseReferenceC", "child"]
+- !private ["So17DatabaseReferenceC", "setValue"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
@@ -99,7 +107,7 @@ depends-member:
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "photoURL"]
 - !private ["s9EquatableP", "profileChangeRequest"]
-- !private ["s9EquatableP", "put"]
+- !private ["s9EquatableP", "putData"]
 - ["s9EquatableP", "reference"]
 - !private ["s9EquatableP", "setValue"]
 - !private ["s9EquatableP", "signIn"]
@@ -110,34 +118,6 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["So7FIRAuthC", "auth"]
-- !private ["So7FIRAuthC", "signIn"]
-- ["So11FIRDatabaseC", "database"]
-- ["So11FIRDatabaseC", "reference"]
-- !private ["So16FIRDatabaseQueryC", "child"]
-- !private ["So16FIRDatabaseQueryC", "setValue"]
-- !private ["So20FIRDatabaseReferenceC", "child"]
-- !private ["So20FIRDatabaseReferenceC", "setValue"]
-- ["So10FIRStorageC", "reference"]
-- ["So10FIRStorageC", "storage"]
-- !private ["So18FIRStorageMetadataC", "contentType"]
-- !private ["So18FIRStorageMetadataC", "downloadURL"]
-- !private ["So18FIRStorageMetadataC", "init"]
-- !private ["So19FIRStorageReferenceC", "child"]
-- !private ["So19FIRStorageReferenceC", "put"]
-- !private ["So7FIRUserC", "displayName"]
-- !private ["So7FIRUserC", "email"]
-- !private ["So7FIRUserC", "photoURL"]
-- !private ["So7FIRUserC", "profileChangeRequest"]
-- !private ["So7FIRUserC", "uid"]
-- !private ["So11FIRUserInfoP", "displayName"]
-- !private ["So11FIRUserInfoP", "email"]
-- !private ["So11FIRUserInfoP", "photoURL"]
-- !private ["So11FIRUserInfoP", "profileChangeRequest"]
-- !private ["So11FIRUserInfoP", "uid"]
-- !private ["So27FIRUserProfileChangeRequestC", "commitChanges"]
-- !private ["So27FIRUserProfileChangeRequestC", "displayName"]
-- !private ["So27FIRUserProfileChangeRequestC", "photoURL"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "auth"]
 - !private ["s8HashableP", "child"]
@@ -150,7 +130,7 @@ depends-member:
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "photoURL"]
 - !private ["s8HashableP", "profileChangeRequest"]
-- !private ["s8HashableP", "put"]
+- !private ["s8HashableP", "putData"]
 - ["s8HashableP", "reference"]
 - !private ["s8HashableP", "setValue"]
 - !private ["s8HashableP", "signIn"]
@@ -177,7 +157,7 @@ depends-member:
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "photoURL"]
 - !private ["So8NSObjectC", "profileChangeRequest"]
-- !private ["So8NSObjectC", "put"]
+- !private ["So8NSObjectC", "putData"]
 - ["So8NSObjectC", "reference"]
 - !private ["So8NSObjectC", "setValue"]
 - !private ["So8NSObjectC", "signIn"]
@@ -194,7 +174,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "photoURL"]
 - !private ["So16NSObjectProtocolP", "profileChangeRequest"]
-- !private ["So16NSObjectProtocolP", "put"]
+- !private ["So16NSObjectProtocolP", "putData"]
 - ["So16NSObjectProtocolP", "reference"]
 - !private ["So16NSObjectProtocolP", "setValue"]
 - !private ["So16NSObjectProtocolP", "signIn"]
@@ -204,10 +184,30 @@ depends-member:
 - !private ["So8NSStringC", "init"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s8SequenceP", "init"]
+- ["So7StorageC", "reference"]
+- ["So7StorageC", "storage"]
+- !private ["So15StorageMetadataC", "contentType"]
+- !private ["So15StorageMetadataC", "downloadURL"]
+- !private ["So15StorageMetadataC", "init"]
+- !private ["So16StorageReferenceC", "child"]
+- !private ["So16StorageReferenceC", "putData"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["So4UserC", "displayName"]
+- !private ["So4UserC", "email"]
+- !private ["So4UserC", "photoURL"]
+- !private ["So4UserC", "profileChangeRequest"]
+- !private ["So4UserC", "uid"]
+- !private ["So8UserInfoP", "displayName"]
+- !private ["So8UserInfoP", "email"]
+- !private ["So8UserInfoP", "photoURL"]
+- !private ["So8UserInfoP", "profileChangeRequest"]
+- !private ["So8UserInfoP", "uid"]
+- !private ["So24UserProfileChangeRequestC", "commitChanges"]
+- !private ["So24UserProfileChangeRequestC", "displayName"]
+- !private ["So24UserProfileChangeRequestC", "photoURL"]
 - !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -229,7 +229,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "photoURL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "profileChangeRequest"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "put"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "putData"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "signIn"]
@@ -239,14 +239,14 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
+- !private ["5alpha17networkingServiceV", "Auth"]
 - !private ["5alpha17networkingServiceV", "Data"]
-- !private ["5alpha17networkingServiceV", "FIRAuth"]
-- ["5alpha17networkingServiceV", "FIRDatabase"]
-- ["5alpha17networkingServiceV", "FIRStorage"]
-- !private ["5alpha17networkingServiceV", "FIRStorageMetadata"]
-- !private ["5alpha17networkingServiceV", "FIRUser"]
+- ["5alpha17networkingServiceV", "Database"]
 - !private ["5alpha17networkingServiceV", "NSData"]
+- ["5alpha17networkingServiceV", "Storage"]
+- !private ["5alpha17networkingServiceV", "StorageMetadata"]
 - ["5alpha17networkingServiceV", "String"]
+- !private ["5alpha17networkingServiceV", "User"]
 - ["5alpha17networkingServiceV", "databaseRef"]
 - ["5alpha17networkingServiceV", "init"]
 - !private ["5alpha17networkingServiceV", "print"]
@@ -255,6 +255,7 @@ depends-member:
 - ["5alpha17networkingServiceV", "signIn"]
 - ["5alpha17networkingServiceV", "storageRef"]
 depends-nominal:
+- !private "So4AuthC"
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
 - "s7CVarArgP"
@@ -264,6 +265,9 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- "So8DatabaseC"
+- !private "So13DatabaseQueryC"
+- !private "So17DatabaseReferenceC"
 - !private "s9DecodableP"
 - !private "s9EncodableP"
 - "s9EquatableP"
@@ -272,16 +276,6 @@ depends-nominal:
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "So7FIRAuthC"
-- "So11FIRDatabaseC"
-- !private "So16FIRDatabaseQueryC"
-- !private "So20FIRDatabaseReferenceC"
-- "So10FIRStorageC"
-- !private "So18FIRStorageMetadataC"
-- !private "So19FIRStorageReferenceC"
-- !private "So7FIRUserC"
-- !private "So11FIRUserInfoP"
-- !private "So27FIRUserProfileChangeRequestC"
 - "s8HashableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
@@ -296,10 +290,16 @@ depends-nominal:
 - !private "So8NSStringC"
 - !private "s26RangeReplaceableCollectionP"
 - !private "s8SequenceP"
+- "So7StorageC"
+- !private "So15StorageMetadataC"
+- !private "So16StorageReferenceC"
 - !private "SS"
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "So4UserC"
+- !private "So8UserInfoP"
+- !private "So24UserProfileChangeRequestC"
 - !private "s23_BidirectionalIndexableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -331,60 +331,71 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
 - "/Users/william/Desktop/alpha/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/william/Desktop/alpha/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-interface-hash: "24b9a00316d737e9cf97f1f312541e77"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "65eb2bea4850b7bfa71f7bb8417a3da5"

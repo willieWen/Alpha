@@ -12,7 +12,7 @@ import FirebaseDatabase
 
 class ProfileViewController: UIViewController {
     
-    var ref:FIRDatabaseReference!
+    var ref:DatabaseReference!
     var refHandle: UInt!
     var fileUploadManager = FileUploadManager()
     
@@ -29,11 +29,11 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
        profileImage.layer.cornerRadius = 25
-        ref = FIRDatabase.database().reference()
-        refHandle = ref.observe(FIRDataEventType.value, with: { (snapshot) in
+        ref = Database.database().reference()
+        refHandle = ref.observe(DataEventType.value, with: { (snapshot) in
             let dataDict = snapshot.value as! [String: AnyObject]
         })
-        let userID: String = (FIRAuth.auth()?.currentUser?.uid)!
+        let userID: String = (Auth.auth().currentUser?.uid)!
         ref.child("Users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
             if let value = snapshot.value as? [String:AnyObject] {
                 let email = value["Email"] as! String

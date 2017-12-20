@@ -21,11 +21,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var invalidLabel: UILabel!
     
-    var ref : FIRDatabaseReference!
+    var ref : DatabaseReference!
     
     @IBAction func logInButton(_ sender: Any) {
         if let email = emailField.text, let password = passwordField.text {
-            FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+            Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
                 if let firebaseError = error {
                     self.invalidLabel.text = firebaseError.localizedDescription
                     
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     
     @IBAction func createAccount(_ sender: Any) {
         if let email = emailField.text, let password = passwordField.text {
-            FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+            Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
                 if let firebaseError = error {
                     self.invalidLabel.text =  (firebaseError.localizedDescription)
                     return
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ref = FIRDatabase.database().reference()
+        ref = Database.database().reference()
         // Do any additional setup after loading the view, typically from a nib.
     }
 }

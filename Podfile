@@ -9,5 +9,5 @@ pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
 
-pod 'SnapKit'
+pod 'SnapKit', '3.0.0'
 end

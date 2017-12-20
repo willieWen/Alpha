@@ -27,7 +27,7 @@
     import AppKit
 #endif
 
-public final class Constraint {
+public class Constraint {
     
     internal let sourceLocation: (String, UInt)
     internal let label: String?
@@ -73,7 +73,7 @@ public final class Constraint {
         let layoutToAttributes = self.to.attributes.layoutAttributes
         
         // get layout from
-        let layoutFrom = self.from.layoutConstraintItem!
+        let layoutFrom: ConstraintView = self.from.view!
         
         // get relation
         let layoutRelation = self.relation.layoutRelation
@@ -115,16 +115,10 @@ public final class Constraint {
                         layoutToAttribute = layoutToAttributes[0]
                     }
                 } else {
-                    if self.to.target == nil && (layoutFromAttribute == .centerX || layoutFromAttribute == .centerY) {
-                        layoutToAttribute = layoutFromAttribute == .centerX ? .left : .top
-                    } else {
-                        layoutToAttribute = layoutFromAttribute
-                    }
+                    layoutToAttribute = layoutFromAttribute
                 }
             #else
-                if self.from.attributes == self.to.attributes {
-                    layoutToAttribute = layoutFromAttribute
-                } else if layoutToAttributes.count > 0 {
+                if layoutToAttributes.count > 0 {
                     layoutToAttribute = layoutToAttributes[0]
                 } else {
                     layoutToAttribute = layoutFromAttribute
@@ -232,33 +226,16 @@ public final class Constraint {
         for layoutConstraint in self.layoutConstraints {
             let attribute = (layoutConstraint.secondAttribute == .notAnAttribute) ? layoutConstraint.firstAttribute : layoutConstraint.secondAttribute
             layoutConstraint.constant = self.constant.constraintConstantTargetValueFor(layoutAttribute: attribute)
-            
-            #if os(iOS) || os(tvOS)
-                let requiredPriority: UILayoutPriority = UILayoutPriorityRequired
-            #else
-                let requiredPriority: Float = 1000.0
-            #endif
-            
-            
-            if (layoutConstraint.priority < requiredPriority), (self.priority.constraintPriorityTargetValue != requiredPriority) {
-                layoutConstraint.priority = self.priority.constraintPriorityTargetValue
-            }
+            layoutConstraint.priority = self.priority.constraintPriorityTargetValue
         }
     }
     
     internal func activateIfNeeded(updatingExisting: Bool = false) {
-        guard let item = self.from.layoutConstraintItem else {
-            print("WARNING: SnapKit failed to get from item from constraint. Activate will be a no-op.")
-            return
-        }
+        let view = self.from.view!
         let layoutConstraints = self.layoutConstraints
+        let existingLayoutConstraints = view.snp.layoutConstraints
         
         if updatingExisting {
-            var existingLayoutConstraints: [LayoutConstraint] = []
-            for constraint in item.constraints {
-                existingLayoutConstraints += constraint.layoutConstraints
-            }
-            
             for layoutConstraint in layoutConstraints {
                 let existingLayoutConstraint = existingLayoutConstraints.first { $0 == layoutConstraint }
                 guard let updateLayoutConstraint = existingLayoutConstraint else {
@@ -270,17 +247,14 @@ public final class Constraint {
             }
         } else {
             NSLayoutConstraint.activate(layoutConstraints)
-            item.add(constraints: [self])
+            view.snp.add(layoutConstraints: layoutConstraints)
         }
     }
     
     internal func deactivateIfNeeded() {
-        guard let item = self.from.layoutConstraintItem else {
-            print("WARNING: SnapKit failed to get from item from constraint. Deactivate will be a no-op.")
-            return
-        }
+        let view = self.from.view!
         let layoutConstraints = self.layoutConstraints
         NSLayoutConstraint.deactivate(layoutConstraints)
-        item.remove(constraints: [self])
+        view.snp.remove(layoutConstraints: layoutConstraints)
     }
 }

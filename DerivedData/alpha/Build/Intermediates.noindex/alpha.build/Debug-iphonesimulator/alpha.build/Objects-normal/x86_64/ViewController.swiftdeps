@@ -19,11 +19,11 @@ depends-top-level:
 - !private "+"
 - !private "AppDelegate"
 - "AssignmentPrecedence"
+- !private "Auth"
 - "CastingPrecedence"
+- !private "Database"
+- "DatabaseReference"
 - "Dictionary"
-- !private "FIRAuth"
-- !private "FIRDatabase"
-- "FIRDatabaseReference"
 - !private "ForgotPasswordController"
 - !private "String"
 - "StringLiteralType"
@@ -39,11 +39,14 @@ depends-top-level:
 depends-member:
 - !private ["5alpha11AppDelegateC", "deinit"]
 - !private ["5alpha11AppDelegateC", "window"]
+- !private ["So4AuthC", "auth"]
+- !private ["So4AuthC", "createUser"]
+- !private ["So4AuthC", "signIn"]
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["So15CALayerDelegateP", "rootViewController"]
 - !private ["So15CALayerDelegateP", "text"]
-- !private ["s7CVarArgP", "FIRAuth"]
-- !private ["s7CVarArgP", "FIRDatabase"]
+- !private ["s7CVarArgP", "Auth"]
+- !private ["s7CVarArgP", "Database"]
 - !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "auth"]
@@ -71,8 +74,8 @@ depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "FIRAuth"]
-- !private ["s28CustomDebugStringConvertibleP", "FIRDatabase"]
+- !private ["s28CustomDebugStringConvertibleP", "Auth"]
+- !private ["s28CustomDebugStringConvertibleP", "Database"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
@@ -100,8 +103,8 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
-- !private ["s23CustomStringConvertibleP", "FIRAuth"]
-- !private ["s23CustomStringConvertibleP", "FIRDatabase"]
+- !private ["s23CustomStringConvertibleP", "Auth"]
+- !private ["s23CustomStringConvertibleP", "Database"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "auth"]
@@ -127,10 +130,16 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "window"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["So8DatabaseC", "database"]
+- !private ["So8DatabaseC", "reference"]
+- !private ["So13DatabaseQueryC", "child"]
+- !private ["So13DatabaseQueryC", "setValue"]
+- !private ["So17DatabaseReferenceC", "child"]
+- !private ["So17DatabaseReferenceC", "setValue"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9EncodableP", "init"]
-- !private ["s9EquatableP", "FIRAuth"]
-- !private ["s9EquatableP", "FIRDatabase"]
+- !private ["s9EquatableP", "Auth"]
+- !private ["s9EquatableP", "Database"]
 - !private ["s9EquatableP", "UIApplication"]
 - !private ["s9EquatableP", "UIStoryboard"]
 - !private ["s9EquatableP", "auth"]
@@ -160,19 +169,8 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["So7FIRAuthC", "auth"]
-- !private ["So7FIRAuthC", "createUser"]
-- !private ["So7FIRAuthC", "signIn"]
-- !private ["So11FIRDatabaseC", "database"]
-- !private ["So11FIRDatabaseC", "reference"]
-- !private ["So16FIRDatabaseQueryC", "child"]
-- !private ["So16FIRDatabaseQueryC", "setValue"]
-- !private ["So20FIRDatabaseReferenceC", "child"]
-- !private ["So20FIRDatabaseReferenceC", "setValue"]
-- !private ["So7FIRUserC", "uid"]
-- !private ["So11FIRUserInfoP", "uid"]
-- !private ["s8HashableP", "FIRAuth"]
-- !private ["s8HashableP", "FIRDatabase"]
+- !private ["s8HashableP", "Auth"]
+- !private ["s8HashableP", "Database"]
 - !private ["s8HashableP", "UIApplication"]
 - !private ["s8HashableP", "UIStoryboard"]
 - !private ["s8HashableP", "auth"]
@@ -200,8 +198,8 @@ depends-member:
 - ["s8HashableP", ""]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["So8NSCodingP", "FIRAuth"]
-- !private ["So8NSCodingP", "FIRDatabase"]
+- !private ["So8NSCodingP", "Auth"]
+- !private ["So8NSCodingP", "Database"]
 - !private ["So8NSCodingP", "UIApplication"]
 - !private ["So8NSCodingP", "UIStoryboard"]
 - !private ["So8NSCodingP", "emailField"]
@@ -216,8 +214,8 @@ depends-member:
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "init"]
-- !private ["So26NSExtensionRequestHandlingP", "FIRAuth"]
-- !private ["So26NSExtensionRequestHandlingP", "FIRDatabase"]
+- !private ["So26NSExtensionRequestHandlingP", "Auth"]
+- !private ["So26NSExtensionRequestHandlingP", "Database"]
 - !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
 - !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
 - !private ["So26NSExtensionRequestHandlingP", "emailField"]
@@ -233,9 +231,9 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "AppDelegate"]
-- !private ["So8NSObjectC", "FIRAuth"]
-- !private ["So8NSObjectC", "FIRDatabase"]
-- ["So8NSObjectC", "FIRDatabaseReference"]
+- !private ["So8NSObjectC", "Auth"]
+- !private ["So8NSObjectC", "Database"]
+- ["So8NSObjectC", "DatabaseReference"]
 - !private ["So8NSObjectC", "ForgotPasswordController"]
 - !private ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "UIApplication"]
@@ -269,8 +267,8 @@ depends-member:
 - !private ["So8NSObjectC", "uid"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectC", "window"]
-- !private ["So16NSObjectProtocolP", "FIRAuth"]
-- !private ["So16NSObjectProtocolP", "FIRDatabase"]
+- !private ["So16NSObjectProtocolP", "Auth"]
+- !private ["So16NSObjectProtocolP", "Database"]
 - !private ["So16NSObjectProtocolP", "UIApplication"]
 - !private ["So16NSObjectProtocolP", "UIStoryboard"]
 - !private ["So16NSObjectProtocolP", "auth"]
@@ -308,8 +306,8 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So12UIAppearanceP", "rootViewController"]
 - !private ["So12UIAppearanceP", "text"]
-- !private ["So21UIAppearanceContainerP", "FIRAuth"]
-- !private ["So21UIAppearanceContainerP", "FIRDatabase"]
+- !private ["So21UIAppearanceContainerP", "Auth"]
+- !private ["So21UIAppearanceContainerP", "Database"]
 - !private ["So21UIAppearanceContainerP", "UIApplication"]
 - !private ["So21UIAppearanceContainerP", "UIStoryboard"]
 - !private ["So21UIAppearanceContainerP", "emailField"]
@@ -326,8 +324,8 @@ depends-member:
 - !private ["So13UIApplicationC", "delegate"]
 - !private ["So13UIApplicationC", "shared"]
 - !private ["So21UIApplicationDelegateP", "window"]
-- !private ["So18UIContentContainerP", "FIRAuth"]
-- !private ["So18UIContentContainerP", "FIRDatabase"]
+- !private ["So18UIContentContainerP", "Auth"]
+- !private ["So18UIContentContainerP", "Database"]
 - !private ["So18UIContentContainerP", "UIApplication"]
 - !private ["So18UIContentContainerP", "UIStoryboard"]
 - !private ["So18UIContentContainerP", "emailField"]
@@ -345,8 +343,8 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So13UIDynamicItemP", "rootViewController"]
 - !private ["So13UIDynamicItemP", "text"]
-- !private ["So18UIFocusEnvironmentP", "FIRAuth"]
-- !private ["So18UIFocusEnvironmentP", "FIRDatabase"]
+- !private ["So18UIFocusEnvironmentP", "Auth"]
+- !private ["So18UIFocusEnvironmentP", "Database"]
 - !private ["So18UIFocusEnvironmentP", "UIApplication"]
 - !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
 - !private ["So18UIFocusEnvironmentP", "emailField"]
@@ -364,8 +362,8 @@ depends-member:
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So10UIKeyInputP", "text"]
 - !private ["So7UILabelC", "text"]
-- !private ["So30UIPasteConfigurationSupportingP", "FIRAuth"]
-- !private ["So30UIPasteConfigurationSupportingP", "FIRDatabase"]
+- !private ["So30UIPasteConfigurationSupportingP", "Auth"]
+- !private ["So30UIPasteConfigurationSupportingP", "Database"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
@@ -383,9 +381,9 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So11UIResponderC", "AppDelegate"]
-- !private ["So11UIResponderC", "FIRAuth"]
-- !private ["So11UIResponderC", "FIRDatabase"]
-- ["So11UIResponderC", "FIRDatabaseReference"]
+- !private ["So11UIResponderC", "Auth"]
+- !private ["So11UIResponderC", "Database"]
+- ["So11UIResponderC", "DatabaseReference"]
 - !private ["So11UIResponderC", "ForgotPasswordController"]
 - !private ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "UIApplication"]
@@ -410,8 +408,8 @@ depends-member:
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So11UIResponderC", "window"]
-- !private ["So30UIResponderStandardEditActionsP", "FIRAuth"]
-- !private ["So30UIResponderStandardEditActionsP", "FIRDatabase"]
+- !private ["So30UIResponderStandardEditActionsP", "Auth"]
+- !private ["So30UIResponderStandardEditActionsP", "Database"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
@@ -428,8 +426,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "window"]
 - ["So30UIResponderStandardEditActionsP", ""]
-- !private ["So16UIStateRestoringP", "FIRAuth"]
-- !private ["So16UIStateRestoringP", "FIRDatabase"]
+- !private ["So16UIStateRestoringP", "Auth"]
+- !private ["So16UIStateRestoringP", "Database"]
 - !private ["So16UIStateRestoringP", "UIApplication"]
 - !private ["So16UIStateRestoringP", "UIStoryboard"]
 - !private ["So16UIStateRestoringP", "emailField"]
@@ -449,8 +447,8 @@ depends-member:
 - !private ["So11UITextInputP", "text"]
 - !private ["So17UITextInputTraitsP", "text"]
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
-- !private ["So18UITraitEnvironmentP", "FIRAuth"]
-- !private ["So18UITraitEnvironmentP", "FIRDatabase"]
+- !private ["So18UITraitEnvironmentP", "Auth"]
+- !private ["So18UITraitEnvironmentP", "Database"]
 - !private ["So18UITraitEnvironmentP", "UIApplication"]
 - !private ["So18UITraitEnvironmentP", "UIStoryboard"]
 - !private ["So18UITraitEnvironmentP", "emailField"]
@@ -467,9 +465,9 @@ depends-member:
 - !private ["So6UIViewC", "rootViewController"]
 - !private ["So6UIViewC", "text"]
 - !private ["So16UIViewControllerC", "AppDelegate"]
-- !private ["So16UIViewControllerC", "FIRAuth"]
-- !private ["So16UIViewControllerC", "FIRDatabase"]
-- ["So16UIViewControllerC", "FIRDatabaseReference"]
+- !private ["So16UIViewControllerC", "Auth"]
+- !private ["So16UIViewControllerC", "Database"]
+- ["So16UIViewControllerC", "DatabaseReference"]
 - !private ["So16UIViewControllerC", "ForgotPasswordController"]
 - !private ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "UIApplication"]
@@ -491,10 +489,12 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", ""]
 - !private ["So8UIWindowC", "rootViewController"]
+- !private ["So4UserC", "uid"]
+- !private ["So8UserInfoP", "uid"]
 - !private ["5alpha14ViewControllerC", "AppDelegate"]
-- !private ["5alpha14ViewControllerC", "FIRAuth"]
-- !private ["5alpha14ViewControllerC", "FIRDatabase"]
-- ["5alpha14ViewControllerC", "FIRDatabaseReference"]
+- !private ["5alpha14ViewControllerC", "Auth"]
+- !private ["5alpha14ViewControllerC", "Database"]
+- ["5alpha14ViewControllerC", "DatabaseReference"]
 - !private ["5alpha14ViewControllerC", "ForgotPasswordController"]
 - !private ["5alpha14ViewControllerC", "String"]
 - !private ["5alpha14ViewControllerC", "UIApplication"]
@@ -526,8 +526,8 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s10_IndexableP", "init"]
 - !private ["s14_IndexableBaseP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRAuth"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRDatabase"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
@@ -558,6 +558,7 @@ depends-member:
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "5alpha11AppDelegateC"
+- !private "So4AuthC"
 - !private "s23BidirectionalCollectionP"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
@@ -567,6 +568,9 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "So8DatabaseC"
+- !private "So13DatabaseQueryC"
+- !private "So17DatabaseReferenceC"
 - !private "s9DecodableP"
 - !private "s9EncodableP"
 - "s9EquatableP"
@@ -574,12 +578,6 @@ depends-nominal:
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "So7FIRAuthC"
-- !private "So11FIRDatabaseC"
-- !private "So16FIRDatabaseQueryC"
-- !private "So20FIRDatabaseReferenceC"
-- !private "So7FIRUserC"
-- !private "So11FIRUserInfoP"
 - "s8HashableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
@@ -628,6 +626,8 @@ depends-nominal:
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "So8UIWindowC"
+- !private "So4UserC"
+- !private "So8UserInfoP"
 - "5alpha14ViewControllerC"
 - !private "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
@@ -659,60 +659,71 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
 - "/Users/william/Desktop/alpha/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/william/Desktop/alpha/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/william/Desktop/alpha/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/william/Desktop/alpha/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/william/Desktop/alpha/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/william/Desktop/alpha/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-interface-hash: "e1487fba1e8746e999b37c7a1ff94fcd"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/william/Desktop/alpha/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "bf16992944ed0b550959ffe3026054a3"

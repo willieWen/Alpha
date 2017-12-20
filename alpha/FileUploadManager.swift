@@ -20,17 +20,17 @@ struct Constants {
 class FileUploadManager: NSObject {
     
     func uploadImage(_ image: UIImage, progressBlock: @escaping (_ percentage: Double) -> Void, completionBlock: @escaping (_ url:URL?, _ errorMessage:String?) -> Void) {
-        let storage = FIRStorage.storage()
+        let storage = Storage.storage()
         let storageReference = storage.reference()
         
         let imageName = "\(Date().timeIntervalSince1970).jpg"
         let imagesReference = storageReference.child(Constants.profileImages.imagesFolder).child(imageName)
         
         if let imageData = UIImageJPEGRepresentation(image, 0.8) {
-            let metaData = FIRStorageMetadata()
+            let metaData = StorageMetadata()
             metaData.contentType = "image/jpeg"
             
-            let uploadTask = imagesReference.put(imageData, metadata: metaData, completion: { (metaData, error) in
+            let uploadTask = imagesReference.putData(imageData, metadata: metaData, completion: { (metaData, error) in
                 if let metaData = metaData {
                     completionBlock(metaData.downloadURL(), nil)
                 }else {

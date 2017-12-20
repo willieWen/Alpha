@@ -16,7 +16,6 @@ depends-top-level:
 - !private "ConstraintConstantTarget"
 - "ConstraintDescription"
 - !private "ConstraintItem"
-- !private "ConstraintLayoutGuide"
 - "ConstraintMakerEditable"
 - "ConstraintMakerRelatable"
 - "ConstraintRelatableTarget"
@@ -33,8 +32,10 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "count"]
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "superview"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "superview"]
 - !private ["s10CollectionP", "count"]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "init"]
@@ -44,10 +45,10 @@ depends-member:
 - !private ["7SnapKit20ConstraintAttributesV", "none"]
 - !private ["7SnapKit21ConstraintDescriptionC", "attributes"]
 - !private ["7SnapKit21ConstraintDescriptionC", "constant"]
-- !private ["7SnapKit21ConstraintDescriptionC", "item"]
 - !private ["7SnapKit21ConstraintDescriptionC", "related"]
 - !private ["7SnapKit21ConstraintDescriptionC", "relation"]
 - !private ["7SnapKit21ConstraintDescriptionC", "sourceLocation"]
+- !private ["7SnapKit21ConstraintDescriptionC", "view"]
 - !private ["7SnapKit14ConstraintItemC", "attributes"]
 - !private ["7SnapKit14ConstraintItemC", "init"]
 - !private ["7SnapKit23ConstraintMakerEditableC", "description"]
@@ -60,7 +61,6 @@ depends-member:
 - !private ["7SnapKit24ConstraintMakerRelatableC", "ConstraintConstantTarget"]
 - ["7SnapKit24ConstraintMakerRelatableC", "ConstraintDescription"]
 - !private ["7SnapKit24ConstraintMakerRelatableC", "ConstraintItem"]
-- !private ["7SnapKit24ConstraintMakerRelatableC", "ConstraintLayoutGuide"]
 - ["7SnapKit24ConstraintMakerRelatableC", "ConstraintMakerEditable"]
 - ["7SnapKit24ConstraintMakerRelatableC", "ConstraintRelatableTarget"]
 - ["7SnapKit24ConstraintMakerRelatableC", "ConstraintRelation"]
@@ -73,18 +73,18 @@ depends-member:
 - ["7SnapKit24ConstraintMakerRelatableC", "equalToSuperview"]
 - !private ["7SnapKit24ConstraintMakerRelatableC", "fatalError"]
 - ["7SnapKit24ConstraintMakerRelatableC", "greaterThanOrEqualTo"]
-- ["7SnapKit24ConstraintMakerRelatableC", "greaterThanOrEqualToSuperview"]
 - ["7SnapKit24ConstraintMakerRelatableC", "init"]
 - ["7SnapKit24ConstraintMakerRelatableC", "lessThanOrEqualTo"]
-- ["7SnapKit24ConstraintMakerRelatableC", "lessThanOrEqualToSuperview"]
 - ["7SnapKit24ConstraintMakerRelatableC", "relatedTo"]
 - !private ["7SnapKit25ConstraintRelatableTargetP", "attributes"]
 - !private ["7SnapKit25ConstraintRelatableTargetP", "init"]
+- !private ["7SnapKit25ConstraintRelatableTargetP", "superview"]
 - !private ["7SnapKit18ConstraintRelationO", "equal"]
 - !private ["7SnapKit18ConstraintRelationO", "greaterThanOrEqual"]
 - !private ["7SnapKit18ConstraintRelationO", "lessThanOrEqual"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "superview"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -93,6 +93,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "superview"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "count"]
 - !private ["s9DecodableP", "init"]
@@ -101,6 +102,7 @@ depends-member:
 - !private ["s9EncodableP", "count"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "attributes"]
 - !private ["s9EquatableP", "edges"]
 - !private ["s9EquatableP", "equal"]
 - !private ["s9EquatableP", "greaterThanOrEqual"]
@@ -109,6 +111,7 @@ depends-member:
 - !private ["s9EquatableP", "lessThanOrEqual"]
 - !private ["s9EquatableP", "margins"]
 - !private ["s9EquatableP", "none"]
+- !private ["s9EquatableP", "superview"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "edges"]
 - !private ["s25ExpressibleByArrayLiteralP", "layoutAttributes"]
@@ -123,17 +126,20 @@ depends-member:
 - !private ["s8HashableP", "greaterThanOrEqual"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "lessThanOrEqual"]
-- !private ["7SnapKit20LayoutConstraintItemP", "superview"]
+- !private ["s8HashableP", "superview"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s17MutableCollectionP", "count"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "superview"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "superview"]
 - !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "superview"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
 - !private ["s9OptionSetP", "edges"]
@@ -161,10 +167,23 @@ depends-member:
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "superview"]
+- !private ["So12UIAppearanceP", "superview"]
+- !private ["So21UIAppearanceContainerP", "superview"]
+- !private ["So17UICoordinateSpaceP", "superview"]
+- !private ["So13UIDynamicItemP", "superview"]
+- !private ["So18UIFocusEnvironmentP", "superview"]
+- !private ["So11UIFocusItemP", "superview"]
+- !private ["So30UIPasteConfigurationSupportingP", "superview"]
+- !private ["So11UIResponderC", "superview"]
+- !private ["So30UIResponderStandardEditActionsP", "superview"]
+- !private ["So18UITraitEnvironmentP", "superview"]
 - !private ["So6UIViewC", "deinit"]
+- !private ["So6UIViewC", "superview"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s23_BidirectionalIndexableP", "count"]
 - !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "superview"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -178,6 +197,7 @@ depends-member:
 - !private ["s14_IndexableBaseP", "count"]
 - !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "superview"]
 - !private ["s17_MutableIndexableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
@@ -190,6 +210,7 @@ depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
+- !private "So15CALayerDelegateP"
 - !private "s7CVarArgP"
 - !private "s10CollectionP"
 - !private "s10ComparableP"
@@ -216,7 +237,6 @@ depends-nominal:
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s8HashableP"
-- !private "7SnapKit20LayoutConstraintItemP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "s17MutableCollectionP"
@@ -225,6 +245,7 @@ depends-nominal:
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
 - !private "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
@@ -239,9 +260,21 @@ depends-nominal:
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
 - !private "s14_ArrayProtocolP"
 - !private "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -281,4 +314,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "95db76353a05493a58233ca33cbacb47"
+interface-hash: "6294f21b2c27ef7084f1a89b992687fb"

@@ -10,12 +10,17 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "ConstraintMakerFinalizable"
 - "ConstraintMakerPriortizable"
+- "ConstraintPriority"
 - "ConstraintPriorityTarget"
-- !private "FloatLiteralType"
-- !private "IntegerLiteralType"
 depends-member:
+- !private ["s10ComparableP", "high"]
+- !private ["s10ComparableP", "low"]
+- !private ["s10ComparableP", "medium"]
+- !private ["s10ComparableP", "required"]
+- !private ["s10ComparableP", "value"]
 - !private ["7SnapKit21ConstraintDescriptionC", "priority"]
 - ["7SnapKit26ConstraintMakerFinalizableC", "ConstraintMakerFinalizable"]
+- ["7SnapKit26ConstraintMakerFinalizableC", "ConstraintPriority"]
 - ["7SnapKit26ConstraintMakerFinalizableC", "ConstraintPriorityTarget"]
 - !private ["7SnapKit26ConstraintMakerFinalizableC", "description"]
 - ["7SnapKit26ConstraintMakerFinalizableC", "init"]
@@ -26,6 +31,7 @@ depends-member:
 - ["7SnapKit26ConstraintMakerFinalizableC", "priorityRequired"]
 - ["7SnapKit26ConstraintMakerFinalizableC", ""]
 - ["7SnapKit27ConstraintMakerPriortizableC", "ConstraintMakerFinalizable"]
+- ["7SnapKit27ConstraintMakerPriortizableC", "ConstraintPriority"]
 - ["7SnapKit27ConstraintMakerPriortizableC", "ConstraintPriorityTarget"]
 - ["7SnapKit27ConstraintMakerPriortizableC", "deinit"]
 - !private ["7SnapKit27ConstraintMakerPriortizableC", "description"]
@@ -35,12 +41,48 @@ depends-member:
 - ["7SnapKit27ConstraintMakerPriortizableC", "priorityLow"]
 - ["7SnapKit27ConstraintMakerPriortizableC", "priorityMedium"]
 - ["7SnapKit27ConstraintMakerPriortizableC", "priorityRequired"]
-- !private ["Si", "deinit"]
+- !private ["7SnapKit18ConstraintPriorityV", "high"]
+- !private ["7SnapKit18ConstraintPriorityV", "low"]
+- !private ["7SnapKit18ConstraintPriorityV", "medium"]
+- !private ["7SnapKit18ConstraintPriorityV", "required"]
+- !private ["7SnapKit18ConstraintPriorityV", "value"]
+- !private ["7SnapKit24ConstraintPriorityTargetP", "high"]
+- !private ["7SnapKit24ConstraintPriorityTargetP", "low"]
+- !private ["7SnapKit24ConstraintPriorityTargetP", "medium"]
+- !private ["7SnapKit24ConstraintPriorityTargetP", "required"]
+- !private ["s9EquatableP", "high"]
+- !private ["s9EquatableP", "low"]
+- !private ["s9EquatableP", "medium"]
+- !private ["s9EquatableP", "required"]
+- !private ["s9EquatableP", "value"]
+- !private ["s25ExpressibleByFloatLiteralP", "high"]
+- !private ["s25ExpressibleByFloatLiteralP", "low"]
+- !private ["s25ExpressibleByFloatLiteralP", "medium"]
+- !private ["s25ExpressibleByFloatLiteralP", "required"]
+- !private ["s25ExpressibleByFloatLiteralP", "value"]
+- !private ["Sf", "deinit"]
+- !private ["s10StrideableP", "high"]
+- !private ["s10StrideableP", "low"]
+- !private ["s10StrideableP", "medium"]
+- !private ["s10StrideableP", "required"]
+- !private ["s10StrideableP", "value"]
+- !private ["s11_StrideableP", "high"]
+- !private ["s11_StrideableP", "low"]
+- !private ["s11_StrideableP", "medium"]
+- !private ["s11_StrideableP", "required"]
+- !private ["s11_StrideableP", "value"]
 depends-nominal:
+- !private "s10ComparableP"
 - !private "7SnapKit21ConstraintDescriptionC"
 - "7SnapKit26ConstraintMakerFinalizableC"
 - "7SnapKit27ConstraintMakerPriortizableC"
-- !private "Si"
+- !private "7SnapKit18ConstraintPriorityV"
+- !private "7SnapKit24ConstraintPriorityTargetP"
+- !private "s9EquatableP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "Sf"
+- !private "s10StrideableP"
+- !private "s11_StrideableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -58,14 +100,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/william/Desktop/alpha/Pods/Target Support Files/SnapKit/SnapKit-umbrella.h"
 - "/Users/william/Desktop/alpha/DerivedData/alpha/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/SnapKit.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "7fab102030f8d7b1ec304e182448e7d0"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "bbcd4bb2db860bee63762d1a7010e359"

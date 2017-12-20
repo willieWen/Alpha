@@ -16,8 +16,8 @@ depends-top-level:
 - "ConstraintMultiplierTarget"
 - "ConstraintPriorityTarget"
 - "ConstraintRelation"
+- "ConstraintView"
 - "FloatLiteralType"
-- "LayoutConstraintItem"
 - "String"
 - "UInt"
 depends-member:
@@ -30,7 +30,7 @@ depends-member:
 - ["7SnapKit21ConstraintDescriptionC", "ConstraintMultiplierTarget"]
 - ["7SnapKit21ConstraintDescriptionC", "ConstraintPriorityTarget"]
 - ["7SnapKit21ConstraintDescriptionC", "ConstraintRelation"]
-- ["7SnapKit21ConstraintDescriptionC", "LayoutConstraintItem"]
+- ["7SnapKit21ConstraintDescriptionC", "ConstraintView"]
 - ["7SnapKit21ConstraintDescriptionC", "String"]
 - ["7SnapKit21ConstraintDescriptionC", "UInt"]
 - ["7SnapKit21ConstraintDescriptionC", "attributes"]
@@ -39,13 +39,13 @@ depends-member:
 - !private ["7SnapKit21ConstraintDescriptionC", "constraint.storage"]
 - ["7SnapKit21ConstraintDescriptionC", "deinit"]
 - ["7SnapKit21ConstraintDescriptionC", "init"]
-- ["7SnapKit21ConstraintDescriptionC", "item"]
 - ["7SnapKit21ConstraintDescriptionC", "label"]
 - ["7SnapKit21ConstraintDescriptionC", "multiplier"]
 - ["7SnapKit21ConstraintDescriptionC", "priority"]
 - ["7SnapKit21ConstraintDescriptionC", "related"]
 - ["7SnapKit21ConstraintDescriptionC", "relation"]
 - ["7SnapKit21ConstraintDescriptionC", "sourceLocation"]
+- ["7SnapKit21ConstraintDescriptionC", "view"]
 - !private ["7SnapKit14ConstraintItemC", "init"]
 - !private ["7SnapKit25ConstraintRelatableTargetP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
@@ -55,6 +55,7 @@ depends-member:
 - ["Sd", "deinit"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
@@ -101,4 +102,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "48494883cd8fd7205628439fe01e545a"
+interface-hash: "e2603fb8f0981770343626389f8ee562"

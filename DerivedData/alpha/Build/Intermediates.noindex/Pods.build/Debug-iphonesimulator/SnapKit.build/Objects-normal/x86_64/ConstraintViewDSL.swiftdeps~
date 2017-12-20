@@ -15,41 +15,63 @@ depends-top-level:
 - "ConstraintView"
 - "ConstraintViewDSL"
 - "Float"
+- !private "LayoutPriority"
 - "Void"
 depends-member:
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s19BinaryFloatingPointP", "rawValue"]
 - !private ["So15CALayerDelegateP", "contentCompressionResistancePriority"]
 - !private ["So15CALayerDelegateP", "contentHuggingPriority"]
 - !private ["So15CALayerDelegateP", "setContentCompressionResistancePriority"]
 - !private ["So15CALayerDelegateP", "setContentHuggingPriority"]
 - !private ["s7CVarArgP", "contentCompressionResistancePriority"]
 - !private ["s7CVarArgP", "contentHuggingPriority"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "rawValue"]
 - !private ["s7CVarArgP", "setContentCompressionResistancePriority"]
 - !private ["s7CVarArgP", "setContentHuggingPriority"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "rawValue"]
 - !private ["7SnapKit23ConstraintAttributesDSLP", "ConstraintMaker"]
+- !private ["7SnapKit23ConstraintAttributesDSLP", "LayoutPriority"]
 - ["7SnapKit23ConstraintAttributesDSLP", "label"]
 - ["7SnapKit23ConstraintAttributesDSLP", "setLabel"]
 - ["7SnapKit23ConstraintAttributesDSLP", "target"]
 - !private ["7SnapKit23ConstraintAttributesDSLP", "view"]
 - ["7SnapKit23ConstraintAttributesDSLP", ""]
 - !private ["7SnapKit28ConstraintBasicAttributesDSLP", "ConstraintMaker"]
+- !private ["7SnapKit28ConstraintBasicAttributesDSLP", "LayoutPriority"]
 - ["7SnapKit28ConstraintBasicAttributesDSLP", "label"]
 - ["7SnapKit28ConstraintBasicAttributesDSLP", "setLabel"]
 - ["7SnapKit28ConstraintBasicAttributesDSLP", "target"]
 - !private ["7SnapKit28ConstraintBasicAttributesDSLP", "view"]
 - ["7SnapKit28ConstraintBasicAttributesDSLP", ""]
+- !private ["7SnapKit24ConstraintConstantTargetP", "init"]
+- !private ["7SnapKit24ConstraintConstantTargetP", "rawValue"]
 - !private ["7SnapKit13ConstraintDSLP", "ConstraintMaker"]
+- !private ["7SnapKit13ConstraintDSLP", "LayoutPriority"]
 - ["7SnapKit13ConstraintDSLP", "label"]
 - ["7SnapKit13ConstraintDSLP", "setLabel"]
 - ["7SnapKit13ConstraintDSLP", "target"]
 - !private ["7SnapKit13ConstraintDSLP", "view"]
 - ["7SnapKit13ConstraintDSLP", ""]
+- !private ["7SnapKit21ConstraintInsetTargetP", "init"]
+- !private ["7SnapKit21ConstraintInsetTargetP", "rawValue"]
 - !private ["7SnapKit15ConstraintMakerC", "makeConstraints"]
 - !private ["7SnapKit15ConstraintMakerC", "prepareConstraints"]
 - !private ["7SnapKit15ConstraintMakerC", "remakeConstraints"]
 - !private ["7SnapKit15ConstraintMakerC", "removeConstraints"]
 - !private ["7SnapKit15ConstraintMakerC", "updateConstraints"]
+- !private ["7SnapKit26ConstraintMultiplierTargetP", "init"]
+- !private ["7SnapKit26ConstraintMultiplierTargetP", "rawValue"]
+- !private ["7SnapKit22ConstraintOffsetTargetP", "init"]
+- !private ["7SnapKit22ConstraintOffsetTargetP", "rawValue"]
+- !private ["7SnapKit24ConstraintPriorityTargetP", "init"]
+- !private ["7SnapKit24ConstraintPriorityTargetP", "rawValue"]
 - !private ["7SnapKit25ConstraintRelatableTargetP", "contentCompressionResistancePriority"]
 - !private ["7SnapKit25ConstraintRelatableTargetP", "contentHuggingPriority"]
+- !private ["7SnapKit25ConstraintRelatableTargetP", "init"]
+- !private ["7SnapKit25ConstraintRelatableTargetP", "rawValue"]
 - !private ["7SnapKit25ConstraintRelatableTargetP", "setContentCompressionResistancePriority"]
 - !private ["7SnapKit25ConstraintRelatableTargetP", "setContentHuggingPriority"]
 - ["7SnapKit17ConstraintViewDSLV", "AnyObject"]
@@ -57,6 +79,7 @@ depends-member:
 - ["7SnapKit17ConstraintViewDSLV", "ConstraintMaker"]
 - ["7SnapKit17ConstraintViewDSLV", "ConstraintView"]
 - ["7SnapKit17ConstraintViewDSLV", "Float"]
+- !private ["7SnapKit17ConstraintViewDSLV", "LayoutPriority"]
 - ["7SnapKit17ConstraintViewDSLV", "Void"]
 - ["7SnapKit17ConstraintViewDSLV", "contentCompressionResistanceHorizontalPriority"]
 - ["7SnapKit17ConstraintViewDSLV", "contentCompressionResistanceVerticalPriority"]
@@ -75,21 +98,45 @@ depends-member:
 - ["7SnapKit17ConstraintViewDSLV", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "contentCompressionResistancePriority"]
 - !private ["s28CustomDebugStringConvertibleP", "contentHuggingPriority"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "rawValue"]
 - !private ["s28CustomDebugStringConvertibleP", "setContentCompressionResistancePriority"]
 - !private ["s28CustomDebugStringConvertibleP", "setContentHuggingPriority"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "rawValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "rawValue"]
 - !private ["s23CustomStringConvertibleP", "contentCompressionResistancePriority"]
 - !private ["s23CustomStringConvertibleP", "contentHuggingPriority"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "rawValue"]
 - !private ["s23CustomStringConvertibleP", "setContentCompressionResistancePriority"]
 - !private ["s23CustomStringConvertibleP", "setContentHuggingPriority"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "rawValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "rawValue"]
 - !private ["s9EquatableP", "contentCompressionResistancePriority"]
 - !private ["s9EquatableP", "contentHuggingPriority"]
 - !private ["s9EquatableP", "horizontal"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "rawValue"]
 - !private ["s9EquatableP", "setContentCompressionResistancePriority"]
 - !private ["s9EquatableP", "setContentHuggingPriority"]
 - !private ["s9EquatableP", "vertical"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "rawValue"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "rawValue"]
+- ["Sf", "init"]
+- !private ["Sf", "rawValue"]
+- !private ["s13FloatingPointP", "init"]
+- !private ["s13FloatingPointP", "rawValue"]
 - !private ["s8HashableP", "contentCompressionResistancePriority"]
 - !private ["s8HashableP", "contentHuggingPriority"]
 - !private ["s8HashableP", "horizontal"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "rawValue"]
 - !private ["s8HashableP", "setContentCompressionResistancePriority"]
 - !private ["s8HashableP", "setContentHuggingPriority"]
 - !private ["s8HashableP", "vertical"]
@@ -97,6 +144,8 @@ depends-member:
 - !private ["7SnapKit20LayoutConstraintItemP", "contentHuggingPriority"]
 - !private ["7SnapKit20LayoutConstraintItemP", "setContentCompressionResistancePriority"]
 - !private ["7SnapKit20LayoutConstraintItemP", "setContentHuggingPriority"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "rawValue"]
 - !private ["So8NSCodingP", "contentCompressionResistancePriority"]
 - !private ["So8NSCodingP", "contentHuggingPriority"]
 - !private ["So8NSCodingP", "setContentCompressionResistancePriority"]
@@ -109,8 +158,14 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "contentHuggingPriority"]
 - !private ["So16NSObjectProtocolP", "setContentCompressionResistancePriority"]
 - !private ["So16NSObjectProtocolP", "setContentHuggingPriority"]
+- !private ["s7NumericP", "init"]
+- !private ["s7NumericP", "rawValue"]
 - !private ["s16RawRepresentableP", "horizontal"]
 - !private ["s16RawRepresentableP", "vertical"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s13SignedNumericP", "rawValue"]
+- !private ["s10StrideableP", "init"]
+- !private ["s10StrideableP", "rawValue"]
 - !private ["So29UIAccessibilityIdentificationP", "contentCompressionResistancePriority"]
 - !private ["So29UIAccessibilityIdentificationP", "contentHuggingPriority"]
 - !private ["So29UIAccessibilityIdentificationP", "setContentCompressionResistancePriority"]
@@ -162,32 +217,63 @@ depends-member:
 - !private ["So6UIViewC", "deinit"]
 - !private ["So6UIViewC", "setContentCompressionResistancePriority"]
 - !private ["So6UIViewC", "setContentHuggingPriority"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s15_CVarArgAlignedP", "rawValue"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "rawValue"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentCompressionResistancePriority"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentHuggingPriority"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setContentCompressionResistancePriority"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setContentHuggingPriority"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "rawValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "rawValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentCompressionResistancePriority"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentHuggingPriority"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setContentCompressionResistancePriority"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setContentHuggingPriority"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "rawValue"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s11_StrideableP", "rawValue"]
 depends-nominal:
+- !private "s19BinaryFloatingPointP"
 - !private "So15CALayerDelegateP"
 - !private "s7CVarArgP"
+- !private "s10ComparableP"
 - "7SnapKit23ConstraintAttributesDSLP"
 - "7SnapKit28ConstraintBasicAttributesDSLP"
+- !private "7SnapKit24ConstraintConstantTargetP"
 - "7SnapKit13ConstraintDSLP"
+- !private "7SnapKit21ConstraintInsetTargetP"
 - !private "7SnapKit15ConstraintMakerC"
+- !private "7SnapKit26ConstraintMultiplierTargetP"
+- !private "7SnapKit22ConstraintOffsetTargetP"
+- !private "7SnapKit24ConstraintPriorityTargetP"
 - !private "7SnapKit25ConstraintRelatableTargetP"
 - "7SnapKit17ConstraintViewDSLV"
 - !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
 - !private "s9EquatableP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- "Sf"
+- !private "s13FloatingPointP"
 - !private "s8HashableP"
 - !private "7SnapKit20LayoutConstraintItemP"
+- !private "s25LosslessStringConvertibleP"
 - !private "So8NSCodingP"
 - !private "So8NSObjectC"
 - !private "So16NSObjectProtocolP"
+- !private "s7NumericP"
 - !private "s16RawRepresentableP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
@@ -201,8 +287,14 @@ depends-nominal:
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s11_StrideableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -220,14 +312,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/william/Desktop/alpha/Pods/Target Support Files/SnapKit/SnapKit-umbrella.h"
 - "/Users/william/Desktop/alpha/DerivedData/alpha/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/SnapKit.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 interface-hash: "38b973de2f2bfd56c4d57af978018e6b"

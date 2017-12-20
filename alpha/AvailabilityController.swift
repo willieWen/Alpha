@@ -20,7 +20,7 @@ class AvailabilityController : UIViewController, UITableViewDataSource, UITableV
     @IBOutlet weak var hourField: UITextField!
     @IBOutlet weak var tblView: UITableView!
     
-    var availabilityRef: FIRDatabaseReference!
+    var availabilityRef: DatabaseReference!
     var availabilityList = [AvaialabilityModel]()
     
     
@@ -75,13 +75,13 @@ class AvailabilityController : UIViewController, UITableViewDataSource, UITableV
 
 
     override func viewDidLoad() {
-        availabilityRef = FIRDatabase.database().reference().child("Avaialabilities")
+        availabilityRef = Database.database().reference().child("Avaialabilities")
         
         availabilityRef.observe(.value, with: {(snapshot) in
             if snapshot.childrenCount > 0 {
                 self.availabilityList.removeAll()
                 
-                for availabilities in snapshot.children.allObjects as![FIRDataSnapshot]{
+                for availabilities in snapshot.children.allObjects as![DataSnapshot]{
                     let available = availabilities.value as? [String: AnyObject]
                     let date = available?["Date"]
                     let time = available?["Time"]

@@ -58,7 +58,6 @@ depends-member:
 - !private ["s10ComparableP", "init"]
 - !private ["7SnapKit10ConstraintC", "sourceLocation"]
 - !private ["7SnapKit23ConstraintAttributesDSLP", "label"]
-- !private ["7SnapKit28ConstraintBasicAttributesDSLP", "label"]
 - !private ["7SnapKit24ConstraintConstantTargetP", "init"]
 - !private ["7SnapKit13ConstraintDSLP", "label"]
 - !private ["7SnapKit21ConstraintInsetTargetP", "init"]
@@ -232,7 +231,6 @@ depends-member:
 - !private ["7SnapKit16LayoutConstraintC", "relation"]
 - !private ["7SnapKit16LayoutConstraintC", "secondAttribute"]
 - !private ["7SnapKit16LayoutConstraintC", "secondItem"]
-- !private ["7SnapKit20LayoutConstraintItemP", "snp"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
@@ -425,7 +423,6 @@ depends-nominal:
 - !private "s10ComparableP"
 - !private "7SnapKit10ConstraintC"
 - !private "7SnapKit23ConstraintAttributesDSLP"
-- !private "7SnapKit28ConstraintBasicAttributesDSLP"
 - !private "7SnapKit24ConstraintConstantTargetP"
 - !private "7SnapKit13ConstraintDSLP"
 - !private "7SnapKit21ConstraintInsetTargetP"
@@ -450,7 +447,6 @@ depends-nominal:
 - !private "s17FixedWidthIntegerP"
 - !private "s8HashableP"
 - "7SnapKit16LayoutConstraintC"
-- !private "7SnapKit20LayoutConstraintItemP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "So8NSCodingP"

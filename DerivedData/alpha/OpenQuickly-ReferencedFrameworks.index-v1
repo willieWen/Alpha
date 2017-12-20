@@ -7,18 +7,22 @@
 	<string>AppKit</string>
 	<string>Firebase</string>
 	<string>FirebaseInstanceID</string>
+	<string>FirebaseFirestore</string>
 	<string>GoogleMobileAds</string>
 	<string>FirebaseDatabase</string>
+	<string>Fabric</string>
 	<string>FirebaseAnalytics</string>
+	<string>FirebasePerformance</string>
 	<string>UIKit</string>
 	<string>sys</string>
 	<string>FirebaseRemoteConfig</string>
+	<string>Crashlytics</string>
 	<string>XCTest</string>
-	<string>alpha</string>
-	<string>WatchKit</string>
 	<string>FirebaseAuth</string>
-	<string>FirebaseMessaging</string>
 	<string>FirebaseCrash</string>
+	<string>WatchKit</string>
+	<string>FirebaseMessaging</string>
+	<string>alpha</string>
 	<string>FirebaseCore</string>
 	<string>FirebaseInvites</string>
 	<string>FirebaseStorage</string>

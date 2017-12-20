@@ -13,7 +13,6 @@ provides-nominal:
 - "SC12UIEdgeInsetsV"
 - "7SnapKit14ConstraintItemC"
 - "So6UIViewC"
-- "So13UILayoutGuideC"
 provides-member:
 - ["7SnapKit25ConstraintRelatableTargetP", ""]
 - ["Si", ""]
@@ -26,7 +25,6 @@ provides-member:
 - ["SC12UIEdgeInsetsV", ""]
 - ["7SnapKit14ConstraintItemC", ""]
 - ["So6UIViewC", ""]
-- ["So13UILayoutGuideC", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "CGFloat"
@@ -34,7 +32,6 @@ depends-top-level:
 - "CGSize"
 - "ConstraintInsets"
 - "ConstraintItem"
-- "ConstraintLayoutGuide"
 - "ConstraintRelatableTarget"
 - "ConstraintView"
 - "Double"
@@ -51,7 +48,6 @@ depends-member:
 - ["Sf", "deinit"]
 - ["Si", "deinit"]
 - ["SC12UIEdgeInsetsV", "deinit"]
-- ["So13UILayoutGuideC", "deinit"]
 - ["So6UIViewC", "deinit"]
 - ["Su", "deinit"]
 depends-nominal:
@@ -64,7 +60,6 @@ depends-nominal:
 - "Sf"
 - "Si"
 - "SC12UIEdgeInsetsV"
-- "So13UILayoutGuideC"
 - "So6UIViewC"
 - "Su"
 depends-dynamic-lookup:
@@ -90,4 +85,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "f9198ebecd29fd406a6c0053408d2a64"
+interface-hash: "14615a0039f00f7aed0eca45446d210d"

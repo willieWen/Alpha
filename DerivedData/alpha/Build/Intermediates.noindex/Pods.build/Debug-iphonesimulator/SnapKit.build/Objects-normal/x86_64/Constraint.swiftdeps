@@ -9,8 +9,6 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "!="
 - !private "&&"
-- !private "+="
-- !private "<"
 - !private "=="
 - !private ">"
 - !private "AnyObject"
@@ -27,19 +25,16 @@ depends-top-level:
 - "ConstraintOffsetTarget"
 - "ConstraintPriorityTarget"
 - "ConstraintRelation"
+- !private "ConstraintView"
 - "LayoutConstraint"
 - !private "NSLayoutAttribute"
 - !private "NSLayoutConstraint"
 - "String"
 - !private "StringLiteralType"
 - "TernaryPrecedence"
-- !private "UILayoutPriority"
-- !private "UILayoutPriorityRequired"
 - "UInt"
 - "Void"
 - !private "fatalError"
-- !private "print"
-- !private "||"
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
@@ -51,6 +46,8 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "snp"]
+- !private ["So15CALayerDelegateP", "superview"]
 - !private ["12CoreGraphics7CGFloatV", "deinit"]
 - !private ["s7CVarArgP", "activate"]
 - !private ["s7CVarArgP", "append"]
@@ -64,7 +61,9 @@ depends-member:
 - !private ["s7CVarArgP", "label"]
 - !private ["s7CVarArgP", "priority"]
 - !private ["s7CVarArgP", "secondAttribute"]
+- !private ["s7CVarArgP", "snp"]
 - !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "superview"]
 - !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "count"]
 - !private ["s10CollectionP", "first"]
@@ -82,12 +81,11 @@ depends-member:
 - ["7SnapKit10ConstraintC", "ConstraintOffsetTarget"]
 - ["7SnapKit10ConstraintC", "ConstraintPriorityTarget"]
 - ["7SnapKit10ConstraintC", "ConstraintRelation"]
+- !private ["7SnapKit10ConstraintC", "ConstraintView"]
 - ["7SnapKit10ConstraintC", "LayoutConstraint"]
 - !private ["7SnapKit10ConstraintC", "NSLayoutAttribute"]
 - !private ["7SnapKit10ConstraintC", "NSLayoutConstraint"]
 - ["7SnapKit10ConstraintC", "String"]
-- !private ["7SnapKit10ConstraintC", "UILayoutPriority"]
-- !private ["7SnapKit10ConstraintC", "UILayoutPriorityRequired"]
 - ["7SnapKit10ConstraintC", "UInt"]
 - ["7SnapKit10ConstraintC", "Void"]
 - ["7SnapKit10ConstraintC", "activate"]
@@ -103,7 +101,6 @@ depends-member:
 - ["7SnapKit10ConstraintC", "label"]
 - !private ["7SnapKit10ConstraintC", "layoutConstraints"]
 - !private ["7SnapKit10ConstraintC", "multiplier"]
-- !private ["7SnapKit10ConstraintC", "print"]
 - !private ["7SnapKit10ConstraintC", "priority"]
 - !private ["7SnapKit10ConstraintC", "relation"]
 - ["7SnapKit10ConstraintC", "sourceLocation"]
@@ -121,20 +118,31 @@ depends-member:
 - !private ["7SnapKit20ConstraintAttributesV", "edges"]
 - !private ["7SnapKit20ConstraintAttributesV", "layoutAttributes"]
 - !private ["7SnapKit20ConstraintAttributesV", "margins"]
+- !private ["7SnapKit23ConstraintAttributesDSLP", "add"]
+- !private ["7SnapKit23ConstraintAttributesDSLP", "layoutConstraints"]
+- !private ["7SnapKit23ConstraintAttributesDSLP", "remove"]
 - !private ["7SnapKit24ConstraintConstantTargetP", "constraintConstantTargetValueFor"]
 - !private ["7SnapKit24ConstraintConstantTargetP", "constraintInsetTargetValue"]
 - !private ["7SnapKit24ConstraintConstantTargetP", "constraintOffsetTargetValue"]
+- !private ["7SnapKit13ConstraintDSLP", "add"]
+- !private ["7SnapKit13ConstraintDSLP", "layoutConstraints"]
+- !private ["7SnapKit13ConstraintDSLP", "remove"]
 - !private ["7SnapKit21ConstraintInsetTargetP", "constraintInsetTargetValue"]
 - !private ["7SnapKit14ConstraintItemC", "attributes"]
-- !private ["7SnapKit14ConstraintItemC", "layoutConstraintItem"]
 - !private ["7SnapKit14ConstraintItemC", "target"]
+- !private ["7SnapKit14ConstraintItemC", "view"]
 - !private ["7SnapKit26ConstraintMultiplierTargetP", "constraintMultiplierTargetValue"]
 - !private ["7SnapKit22ConstraintOffsetTargetP", "constraintOffsetTargetValue"]
 - !private ["7SnapKit24ConstraintPriorityTargetP", "constraintPriorityTargetValue"]
 - !private ["7SnapKit25ConstraintRelatableTargetP", "attributes"]
-- !private ["7SnapKit25ConstraintRelatableTargetP", "layoutConstraintItem"]
+- !private ["7SnapKit25ConstraintRelatableTargetP", "snp"]
+- !private ["7SnapKit25ConstraintRelatableTargetP", "superview"]
 - !private ["7SnapKit25ConstraintRelatableTargetP", "target"]
+- !private ["7SnapKit25ConstraintRelatableTargetP", "view"]
 - !private ["7SnapKit18ConstraintRelationO", "layoutRelation"]
+- !private ["7SnapKit17ConstraintViewDSLV", "add"]
+- !private ["7SnapKit17ConstraintViewDSLV", "layoutConstraints"]
+- !private ["7SnapKit17ConstraintViewDSLV", "remove"]
 - !private ["s28CustomDebugStringConvertibleP", "activate"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "constant"]
@@ -147,7 +155,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "label"]
 - !private ["s28CustomDebugStringConvertibleP", "priority"]
 - !private ["s28CustomDebugStringConvertibleP", "secondAttribute"]
+- !private ["s28CustomDebugStringConvertibleP", "snp"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "superview"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -169,7 +179,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "label"]
 - !private ["s23CustomStringConvertibleP", "priority"]
 - !private ["s23CustomStringConvertibleP", "secondAttribute"]
+- !private ["s23CustomStringConvertibleP", "snp"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "superview"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "append"]
 - !private ["s9DecodableP", "count"]
@@ -184,10 +196,9 @@ depends-member:
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "activate"]
+- !private ["s9EquatableP", "attributes"]
 - ["s9EquatableP", "bottom"]
 - ["s9EquatableP", "bottomMargin"]
-- !private ["s9EquatableP", "centerX"]
-- !private ["s9EquatableP", "centerY"]
 - !private ["s9EquatableP", "constant"]
 - !private ["s9EquatableP", "constraint"]
 - !private ["s9EquatableP", "deactivate"]
@@ -206,8 +217,12 @@ depends-member:
 - ["s9EquatableP", "right"]
 - ["s9EquatableP", "rightMargin"]
 - !private ["s9EquatableP", "secondAttribute"]
+- !private ["s9EquatableP", "snp"]
+- !private ["s9EquatableP", "superview"]
+- !private ["s9EquatableP", "target"]
 - ["s9EquatableP", "top"]
 - ["s9EquatableP", "topMargin"]
+- !private ["s9EquatableP", "view"]
 - !private ["s9EquatableP", "width"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
@@ -225,8 +240,6 @@ depends-member:
 - !private ["s8HashableP", "activate"]
 - ["s8HashableP", "bottom"]
 - ["s8HashableP", "bottomMargin"]
-- !private ["s8HashableP", "centerX"]
-- !private ["s8HashableP", "centerY"]
 - !private ["s8HashableP", "constant"]
 - !private ["s8HashableP", "constraint"]
 - !private ["s8HashableP", "deactivate"]
@@ -242,6 +255,8 @@ depends-member:
 - ["s8HashableP", "right"]
 - ["s8HashableP", "rightMargin"]
 - !private ["s8HashableP", "secondAttribute"]
+- !private ["s8HashableP", "snp"]
+- !private ["s8HashableP", "superview"]
 - ["s8HashableP", "top"]
 - ["s8HashableP", "topMargin"]
 - !private ["s8HashableP", "width"]
@@ -253,10 +268,6 @@ depends-member:
 - !private ["7SnapKit16LayoutConstraintC", "label"]
 - !private ["7SnapKit16LayoutConstraintC", "priority"]
 - !private ["7SnapKit16LayoutConstraintC", "secondAttribute"]
-- !private ["7SnapKit20LayoutConstraintItemP", "add"]
-- !private ["7SnapKit20LayoutConstraintItemP", "constraints"]
-- !private ["7SnapKit20LayoutConstraintItemP", "remove"]
-- !private ["7SnapKit20LayoutConstraintItemP", "superview"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
@@ -265,13 +276,13 @@ depends-member:
 - !private ["s17MutableCollectionP", "first"]
 - !private ["s17MutableCollectionP", "subscript"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "snp"]
+- !private ["So8NSCodingP", "superview"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - ["SC17NSLayoutAttributeO", "bottom"]
 - ["SC17NSLayoutAttributeO", "bottomMargin"]
-- !private ["SC17NSLayoutAttributeO", "centerX"]
-- !private ["SC17NSLayoutAttributeO", "centerY"]
 - !private ["SC17NSLayoutAttributeO", "height"]
 - ["SC17NSLayoutAttributeO", "left"]
 - ["SC17NSLayoutAttributeO", "leftMargin"]
@@ -300,6 +311,8 @@ depends-member:
 - !private ["So8NSObjectC", "label"]
 - !private ["So8NSObjectC", "priority"]
 - !private ["So8NSObjectC", "secondAttribute"]
+- !private ["So8NSObjectC", "snp"]
+- !private ["So8NSObjectC", "superview"]
 - !private ["So16NSObjectProtocolP", "activate"]
 - !private ["So16NSObjectProtocolP", "constant"]
 - !private ["So16NSObjectProtocolP", "constraint"]
@@ -309,6 +322,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "label"]
 - !private ["So16NSObjectProtocolP", "priority"]
 - !private ["So16NSObjectProtocolP", "secondAttribute"]
+- !private ["So16NSObjectProtocolP", "snp"]
+- !private ["So16NSObjectProtocolP", "superview"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
 - !private ["s9OptionSetP", "edges"]
@@ -325,8 +340,6 @@ depends-member:
 - !private ["s26RangeReplaceableCollectionP", "subscript"]
 - ["s16RawRepresentableP", "bottom"]
 - ["s16RawRepresentableP", "bottomMargin"]
-- !private ["s16RawRepresentableP", "centerX"]
-- !private ["s16RawRepresentableP", "centerY"]
 - !private ["s16RawRepresentableP", "edges"]
 - !private ["s16RawRepresentableP", "height"]
 - !private ["s16RawRepresentableP", "layoutAttributes"]
@@ -353,7 +366,31 @@ depends-member:
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "snp"]
+- !private ["So29UIAccessibilityIdentificationP", "superview"]
+- !private ["So12UIAppearanceP", "snp"]
+- !private ["So12UIAppearanceP", "superview"]
+- !private ["So21UIAppearanceContainerP", "snp"]
+- !private ["So21UIAppearanceContainerP", "superview"]
+- !private ["So17UICoordinateSpaceP", "snp"]
+- !private ["So17UICoordinateSpaceP", "superview"]
+- !private ["So13UIDynamicItemP", "snp"]
+- !private ["So13UIDynamicItemP", "superview"]
 - !private ["SC12UIEdgeInsetsV", "deinit"]
+- !private ["So18UIFocusEnvironmentP", "snp"]
+- !private ["So18UIFocusEnvironmentP", "superview"]
+- !private ["So11UIFocusItemP", "snp"]
+- !private ["So11UIFocusItemP", "superview"]
+- !private ["So30UIPasteConfigurationSupportingP", "snp"]
+- !private ["So30UIPasteConfigurationSupportingP", "superview"]
+- !private ["So11UIResponderC", "snp"]
+- !private ["So11UIResponderC", "superview"]
+- !private ["So30UIResponderStandardEditActionsP", "snp"]
+- !private ["So30UIResponderStandardEditActionsP", "superview"]
+- !private ["So18UITraitEnvironmentP", "snp"]
+- !private ["So18UITraitEnvironmentP", "superview"]
+- !private ["So6UIViewC", "snp"]
+- !private ["So6UIViewC", "superview"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "first"]
@@ -363,6 +400,8 @@ depends-member:
 - !private ["s23_BidirectionalIndexableP", "first"]
 - !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "snp"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "superview"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "first"]
@@ -393,6 +432,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "label"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "priority"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "secondAttribute"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "snp"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "superview"]
 - !private ["s17_MutableIndexableP", "append"]
 - !private ["s17_MutableIndexableP", "count"]
 - !private ["s17_MutableIndexableP", "first"]
@@ -417,13 +458,16 @@ depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
+- !private "So15CALayerDelegateP"
 - !private "12CoreGraphics7CGFloatV"
 - !private "s7CVarArgP"
 - !private "s10CollectionP"
 - !private "s10ComparableP"
 - "7SnapKit10ConstraintC"
 - !private "7SnapKit20ConstraintAttributesV"
+- !private "7SnapKit23ConstraintAttributesDSLP"
 - !private "7SnapKit24ConstraintConstantTargetP"
+- !private "7SnapKit13ConstraintDSLP"
 - !private "7SnapKit21ConstraintInsetTargetP"
 - !private "7SnapKit14ConstraintItemC"
 - !private "7SnapKit26ConstraintMultiplierTargetP"
@@ -431,6 +475,7 @@ depends-nominal:
 - !private "7SnapKit24ConstraintPriorityTargetP"
 - !private "7SnapKit25ConstraintRelatableTargetP"
 - !private "7SnapKit18ConstraintRelationO"
+- !private "7SnapKit17ConstraintViewDSLV"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
@@ -446,7 +491,6 @@ depends-nominal:
 - !private "Sf"
 - "s8HashableP"
 - !private "7SnapKit16LayoutConstraintC"
-- !private "7SnapKit20LayoutConstraintItemP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "s17MutableCollectionP"
@@ -472,9 +516,22 @@ depends-nominal:
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
 - !private "SC12UIEdgeInsetsV"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
 - !private "s14_ArrayProtocolP"
 - !private "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -514,4 +571,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "7fbd995b690cb76011d7bfdeb7f0465d"
+interface-hash: "ee9900b1423ebf7911ae5458892d51f0"

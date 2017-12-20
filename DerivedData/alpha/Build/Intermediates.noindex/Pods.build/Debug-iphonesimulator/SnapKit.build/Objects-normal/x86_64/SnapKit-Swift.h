@@ -201,12 +201,6 @@ SWIFT_CLASS("_TtC7SnapKit16LayoutConstraint")
 
 
 
-
-
-
-
-
-
 @interface UIView (SWIFT_EXTENSION(SnapKit))
 - (void)snp_removeConstraints;
 @end
